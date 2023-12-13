@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from "next/link";
 import Image from "next/image";
-import About from '../pages/about';
+
 
 const Navbar = () => {
   return (
