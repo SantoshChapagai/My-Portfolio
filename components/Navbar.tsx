@@ -5,11 +5,12 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className='w-full mx-auto flex justify-between items-center sm:px-16 px-6 py-4 bg-teal-200 fixed'>
+    <div className='w-full mx-auto flex justify-between items-center sm:px-16 px-6 py-4 bg-teal-200'>
        <Link href="/">
         <Image src="/logo.png" alt="santosh" width={72} height={16} className="object-contain"/>
        </Link>
       <nav className='flex space-x-4'>
+        <Link href="/">Home</Link>
         <Link href="/about" passHref={true} legacyBehavior><a>About</a></Link>
         <Link href="/skills">Skills</Link>
         <Link href="/projects">Projects</Link>
