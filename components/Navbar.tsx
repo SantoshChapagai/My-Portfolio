@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className='w-full mx-auto flex justify-between items-center sm:px-16 px-6 py-4 bg-teal-200'>
+    <div className='w-full mx-auto flex justify-between items-center px-12 h-24 py-4 bg-black text-white'>
        <Link href="/">
-        <Image src="/logo.png" alt="santosh" width={72} height={16} className="object-contain"/>
+        SC
        </Link>
       <nav className='flex space-x-4'>
         <Link href="/">Home</Link>
