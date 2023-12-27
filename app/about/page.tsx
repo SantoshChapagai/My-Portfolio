@@ -18,6 +18,57 @@ This transition has been an enlightening experience, fostering a deep appreciati
       </div>
       <div>
         <h1>Educational Background</h1>
+        <div>
+          <h2>Bachelor's Degree in Business Studies</h2>
+          <h3>Tribhuvan University</h3>
+          <h4>Skills</h4>
+          <ul>
+            <li>Accounting</li>
+            <li>Finance</li>
+            <li>Marketing</li>
+            <li>Research and development</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Bachelor's in Business Administration, International Business</h2>
+          <h3>Seinäjoki University of Applied Sciences</h3>
+          <h4>Skills</h4>
+          <ul>
+            <li>Business planning</li>
+            <li>Market research</li>
+            <li>Accounting</li>
+            <li>Interntaional business management</li>
+            <li>Strategic planning</li>
+            <li>Teamwork</li>
+            <li>Research</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Master's in Business Administration, International Business</h2>
+          <h3>Centria University of Applied Aciences</h3>
+          <h4>Skills</h4>
+          <ul>
+            <li>International business management</li>
+            <li>Strategic management</li>
+            <li>Marketing strategy</li>
+            <li>Research</li>
+            <li>Human resource development</li>
+            <li>Sustainable development</li>
+            <li>Change management</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Full-Stack Web Development</h2>
+          <h3>Business College Helsinki</h3>
+          <h4>Skills</h4>
+          <ul>
+            <li>HTML, CSS, and JavaScript</li>
+            <li>Php and Symfony</li>
+            <li>Responsive web design</li>
+            <li>Drupal</li>
+            <li>React and NextJS</li>
+          </ul>
+        </div>
       </div>
       <div>
         <h1>Hobbies</h1>
