@@ -1,12 +1,13 @@
 import {Navbar, Footer} from '@/components'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
+import './globals.css';
+import {ThemeProvider} from "next-themes"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Santosh chapagai',
+  title: 'Santosh Chapagai',
   description: 'Created by santosh',
 }
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         {children}
         <Footer />
         </body>
+        
     </html>
   )
 }

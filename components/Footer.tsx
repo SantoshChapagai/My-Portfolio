@@ -14,13 +14,13 @@ const Footer = () => {
         <Link href="https://www.facebook.com/santosh.chapagai.56" target="_blank">
           <Image src="facebook.svg" alt="facebook" width={32} height={32}/>
         </Link>
-        <Link href="linkedin.com/in/santosh-chapagai-44b313131" target="_blank">
+        <Link href="https://www.linkedin.com/in/santosh-chapagai-44b313131/" target="_blank">
           <Image src="linkedin.svg" alt="linkedin" width={32} height={32}/>
         </Link>
         <Link href="https://github.com/SantoshChapagai" target="_blank">
           <Image src="/github.png" alt="github"  width={32} height={32}/>
         </Link>
-        <Link href="https://intagram.com/san__tosh?igshid=MTNiYzNiMzKwZA==" target="_blank">
+        <Link href="https://www.instagram.com/san____tosh?igsh=NmdwNDZ4NnE5MXB4" target="_blank">
           <Image src="instagram.svg" alt="instagram"  width={32} height={32}/>
         </Link>
         <Link href="mailto:santoshchapagai100@gmail.com">
