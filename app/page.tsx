@@ -9,7 +9,7 @@ export default function Home() {
       <p className='p-4'>I am a Master's in Business Administration graduate and a full stack developer. I am going to complete my full-stack program from Business College Helsinki. Currently, I am looking for an internship in the field of web development.</p>
       </div>
       <div>
-        <Image src="/santosh.jpg" alt="santosh" width={768} height={512} className="object-contain rounded-full h-96 w-84 pt-8"/>
+        <Image src="/santosh.jpg" alt="santosh" width={768} height={512} className="object-contain rounded-ig h-96 w-84 pt-8"/>
       </div>
     </main>
   )

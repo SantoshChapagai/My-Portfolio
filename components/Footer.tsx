@@ -10,7 +10,7 @@ const Footer = () => {
       <div>
       <p>&copy;{year} Santosh. All rights reserved.</p>
       </div>
-      <div className='flex space-x-4'>
+      <div className='flex space-x-4 dark:text-white'>
         <Link href="https://www.facebook.com/santosh.chapagai.56" target="_blank">
           <Image src="facebook.svg" alt="facebook" width={32} height={32}/>
         </Link>
@@ -18,7 +18,7 @@ const Footer = () => {
           <Image src="linkedin.svg" alt="linkedin" width={32} height={32}/>
         </Link>
         <Link href="https://github.com/SantoshChapagai" target="_blank">
-          <Image src="/github.png" alt="github"  width={32} height={32}/>
+          <Image src="/github.svg" alt="github"  width={32} height={32}/>
         </Link>
         <Link href="https://www.instagram.com/san____tosh?igsh=NmdwNDZ4NnE5MXB4" target="_blank">
           <Image src="instagram.svg" alt="instagram"  width={32} height={32}/>
