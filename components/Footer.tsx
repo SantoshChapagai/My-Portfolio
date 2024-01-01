@@ -16,7 +16,7 @@ const Footer = () => {
       <div>
       <p>&copy;{year} Santosh. All rights reserved.</p>
       </div>
-      <div className='flex space-x-4'>
+      <div className='flex space-x-4 mr-8'>
         <Link href="https://www.facebook.com/santosh.chapagai.56" target="_blank">
           <FaFacebook className="dark:text-white" size={32} />
         </Link>

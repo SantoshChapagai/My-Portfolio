@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css';
 import {ThemeProvider} from "next-themes"
+import TopButton from '@/components/TopButton';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,9 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <div className='absolute bottom-8 right-10'>
+        <TopButton/>
+        </div>
         </body>
         
     </html>
