@@ -1,6 +1,12 @@
 import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
+import {FaFacebook} from "react-icons/fa"
+import {FaLinkedin} from "react-icons/fa"
+import {FaGithub} from "react-icons/fa"
+import {FaInstagram} from "react-icons/fa"
+import {CiMail} from "react-icons/ci"
+
 
 const Footer = () => {
   const date= new Date();
@@ -10,9 +16,14 @@ const Footer = () => {
       <div>
       <p>&copy;{year} Santosh. All rights reserved.</p>
       </div>
-      <div className='flex space-x-4 dark:text-white'>
+      <div className='flex space-x-4'>
         <Link href="https://www.facebook.com/santosh.chapagai.56" target="_blank">
           <Image src="facebook.svg" alt="facebook" width={32} height={32}/>
+          {/* <FaFacebook className="text-white" size={24} />
+          <FaLinkedin className="text-white" size={18} />
+          <FaGithub className="text-white" size={18} />
+          <FaInstagram className="text-white" size={18} />
+          <CiMail className="text-white" size={18} /> */}
         </Link>
         <Link href="https://www.linkedin.com/in/santosh-chapagai-44b313131/" target="_blank">
           <Image src="linkedin.svg" alt="linkedin" width={32} height={32}/>

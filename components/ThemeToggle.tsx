@@ -27,8 +27,8 @@ const ThemeToggle = () => {
     {darkMode ? (
       <BsSunFill className="text-white" size={18} />
     ) : (
-      <div className='relative w-6 h-6 rounded-full shadow-md transition-transform duration-300 transform' style={darkMode ? { transform: 'translateX(100%)' } : {}}>
-        <FaMoon className="absolute top-0 left-0 text-white" size={18} />
+      <div className='relative w-6 h-6 transition-transform duration-300 transform' style={darkMode ? { transform: 'translateX(100%)' } : {}}>
+        <FaMoon className="absolute top-0 left-0" size={18} />
       </div>
     )}
   </div>
