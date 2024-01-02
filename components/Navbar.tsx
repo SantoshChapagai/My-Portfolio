@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className='w-full mx-auto flex justify-between items-center px-12 h-24 py-4 bg-cyan-100 dark:bg-black fixed'>
        <Link href="/">
-        SC
+       <h1 className='text-2xl'>SC</h1> 
        </Link>
       <nav className='flex space-x-4'>
         <Link href="/">Home</Link>
