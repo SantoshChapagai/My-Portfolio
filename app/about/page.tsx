@@ -1,4 +1,7 @@
+import TypographyH2 from '@/components/typography/h2'
+import TypographyH3 from '@/components/typography/h3'
 import React from 'react'
+
 
 const About = () => {
   return (
@@ -9,7 +12,7 @@ const About = () => {
         </p>
       </div>
       <div className='max-w-[750px]'>
-        <h1>Journey to be a developer</h1>
+        <TypographyH2>Journey to be a developer</TypographyH2> 
         <p>I completed my Master's Degree in Business at Centria University of Applied Sciences and have embarked on a career transition towards the dynamic field of information technology. Motivated by the evolving landscape within this sector, I began honing my programming skills through platforms like FreeCodeCamp and Udemy.
 
 Fortunately, I was admitted to the Full Stack Developer program at Business College Helsinki, where I've had the privilege of immersing myself in cutting-edge technologies such as React and Drupal. Over the course of a year, the once-daunting journey has become increasingly manageable and realistic through consistent practice and patience.
@@ -17,9 +20,9 @@ Fortunately, I was admitted to the Full Stack Developer program at Business Coll
 This transition has been an enlightening experience, fostering a deep appreciation for the intricacies of programming and development. I find particular fascination and enjoyment in exploring the capabilities of technologies like React and Drupal, discovering their potential applications and versatility within the digital landscape.</p>
       </div>
       <div>
-        <h1>Educational Background</h1>
+        <TypographyH2>Educational Background</TypographyH2>
         <div>
-          <h2>Bachelor's Degree in Business Studies</h2>
+          <TypographyH3>Bachelor's Degree in Business Studies</TypographyH3>
           <h3>Tribhuvan University</h3>
           <h4>Skills</h4>
           <ul>

@@ -2,13 +2,14 @@ import React from 'react'
 import Link from "next/link";
 import Image from "next/image";
 import ThemeToggle from './ThemeToggle';
+import TypographyH2 from './typography/h2';
 
 
 const Navbar = () => {
   return (
     <div className='w-full mx-auto flex justify-between items-center px-12 h-24 py-4 bg-cyan-100 dark:bg-black fixed'>
        <Link href="/">
-       <h1 className='text-2xl'>SC</h1> 
+       <TypographyH2>SC</TypographyH2> 
        </Link>
       <nav className='flex space-x-4'>
         <Link href="/">Home</Link>
