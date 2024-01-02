@@ -7,7 +7,7 @@ import TypographyH2 from './typography/h2';
 
 const Navbar = () => {
   return (
-    <div className='w-full mx-auto flex justify-between items-center px-12 h-24 py-4 bg-cyan-100 dark:bg-black fixed'>
+    <div className='w-full mx-auto flex justify-between items-center px-12 h-24 py-4 bg-cyan-100 dark:bg-black fixed z-50'>
        <Link href="/">
        <TypographyH2>SC</TypographyH2> 
        </Link>

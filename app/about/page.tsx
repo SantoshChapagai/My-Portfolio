@@ -1,6 +1,7 @@
 import TypographyH2 from '@/components/typography/h2'
-import TypographyH3 from '@/components/typography/h3'
 import React from 'react'
+import Image from 'next/image'
+import Link from "next/link";
 
 
 const About = () => {
@@ -15,27 +16,37 @@ const About = () => {
         <TypographyH2>Journey to be a developer</TypographyH2> 
         <p>I completed my Master's Degree in Business at Centria University of Applied Sciences and have embarked on a career transition towards the dynamic field of information technology. Motivated by the evolving landscape within this sector, I began honing my programming skills through platforms like FreeCodeCamp and Udemy.
 
-Fortunately, I was admitted to the Full Stack Developer program at Business College Helsinki, where I've had the privilege of immersing myself in cutting-edge technologies such as React and Drupal. Over the course of a year, the once-daunting journey has become increasingly manageable and realistic through consistent practice and patience.
+       Fortunately, I was admitted to the Full Stack Developer program at Business College Helsinki, where I've had the privilege of immersing myself in cutting-edge technologies such as React and Drupal. Over the course of a year, the once-daunting journey has become increasingly manageable and realistic through consistent practice and patience.
 
-This transition has been an enlightening experience, fostering a deep appreciation for the intricacies of programming and development. I find particular fascination and enjoyment in exploring the capabilities of technologies like React and Drupal, discovering their potential applications and versatility within the digital landscape.</p>
+       This transition has been an enlightening experience, fostering a deep appreciation for the intricacies of programming and development. I find particular fascination and enjoyment in exploring the capabilities of technologies like React and Drupal, discovering their potential applications and versatility within the digital landscape.</p>
       </div>
       <div>
         <TypographyH2>Educational Background</TypographyH2>
-        <div>
-          <TypographyH3>Bachelor's Degree in Business Studies</TypographyH3>
-          <h3>Tribhuvan University</h3>
-          <h4>Skills</h4>
+        <div className='grid grid-cols-2 gap-8 mt-12'>
+        <Link href="https://tu.edu.np/" target="_blank" className='flex justify-around transition-all rounded-3xl group'>
+          <div className='mb-2 overflow-hidden aspect-w-16 aspect-h-10 rounded-xl'>
+          <Image src="/tu.png" alt="TU" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-125"/>
+          </div>
+         <div>
+         <h3 className='text-xl font-bold'>Bachelor's Degree in Business Studies</h3>
+          <h3 className='font-bold mb-5'>Tribhuvan University</h3>
+          <h4 className='group-hover:font-bold underline'>Skills</h4>
           <ul>
             <li>Accounting</li>
             <li>Finance</li>
             <li>Marketing</li>
             <li>Research and development</li>
           </ul>
-        </div>
-        <div>
-          <h2>Bachelor's in Business Administration, International Business</h2>
-          <h3>Seinäjoki University of Applied Sciences</h3>
-          <h4>Skills</h4>
+          </div>
+        </Link>
+        <Link href="https://seamk.fi/" target="_blank" className='flex justify-around transition-all rounded-3xl group'>
+        <div className='mb-2 overflow-hidden aspect-w-16 aspect-h-10 rounded-xl'>
+          <Image src="/SeAMK.jpeg" alt="Seinäjoki" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-125"/>
+          </div>
+          <div className='ml-8'>
+          <h3 className='text-xl font-bold'>Bachelor's in Business Administration, International Business</h3>
+          <h3 className='font-bold mb-5'>Seinäjoki University of Applied Sciences</h3>
+          <h4 className='group-hover:font-bold underline'>Skills</h4>
           <ul>
             <li>Business planning</li>
             <li>Market research</li>
@@ -45,11 +56,16 @@ This transition has been an enlightening experience, fostering a deep appreciati
             <li>Teamwork</li>
             <li>Research</li>
           </ul>
-        </div>
-        <div>
-          <h2>Master's in Business Administration, International Business</h2>
-          <h3>Centria University of Applied Aciences</h3>
-          <h4>Skills</h4>
+          </div>
+        </Link>
+        <Link href="https://centria.fi/" target="_blank" className='flex justify-around transition-all rounded-3xl group'>
+        <div className='mb-2 overflow-hidden aspect-w-16 aspect-h-10 rounded-xl'>
+          <Image src="/Centria.jpg" alt="Centria" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-125"/>
+          </div>
+          <div>
+          <h2 className='text-xl font-bold'>Master's in Business Administration, International Business</h2>
+          <h3 className='font-bold mb-5'>Centria University of Applied Aciences</h3>
+          <h4 className='group-hover:font-bold underline'>Skills</h4>
           <ul>
             <li>International business management</li>
             <li>Strategic management</li>
@@ -59,11 +75,16 @@ This transition has been an enlightening experience, fostering a deep appreciati
             <li>Sustainable development</li>
             <li>Change management</li>
           </ul>
-        </div>
+          </div>
+        </Link>
+        <Link href="https://www.bc.fi/" target="_blank" className='flex justify-around transition-all rounded-3xl group'>
+        <div className='mb-2 overflow-hidden aspect-w-16 aspect-h-10 rounded-xl'>
+          <Image src="/BCH.jpeg" alt="BCH" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-125"/>
+          </div>
         <div>
-          <h2>Full-Stack Web Development</h2>
-          <h3>Business College Helsinki</h3>
-          <h4>Skills</h4>
+          <h2 className='text-xl font-bold'>Full-Stack Web Development</h2>
+          <h3 className='font-bold mb-5'>Business College Helsinki</h3>
+          <h4 className='group-hover:font-bold underline'>Skills</h4>
           <ul>
             <li>HTML, CSS, and JavaScript</li>
             <li>Php and Symfony</li>
@@ -72,9 +93,11 @@ This transition has been an enlightening experience, fostering a deep appreciati
             <li>React and NextJS</li>
           </ul>
         </div>
+        </Link>
+        </div>
       </div>
       <div>
-        <h1>Hobbies</h1>
+        <TypographyH2>Hobbies</TypographyH2>
       </div>
     </div>
   )
