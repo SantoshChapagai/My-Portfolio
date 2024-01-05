@@ -12,6 +12,9 @@ import { DiMongodb } from "react-icons/di";
 import { DiMysql } from "react-icons/di";
 import { FaAws } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { SiMocha } from "react-icons/si";
+import { SiSonarcloud } from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -47,6 +50,9 @@ const Skills = () => {
         <div className='grid gap-4 grid-cols-4'>
          <FaAws size={96}/>
          <FaBootstrap size={96}/>
+         <SiTailwindcss size={96}/>
+         <SiMocha size={96}/>
+         <SiSonarcloud size={96}/>
         </div>
       </div>
       
