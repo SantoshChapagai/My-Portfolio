@@ -24,7 +24,7 @@ export default function Home() {
          </div>
          </div>
      
-      <div className='lg:flex justify-evenly mt-8 ml-2'>
+      <div className='lg:flex justify-evenly lg:mt-32 ml-2'>
         <Link href="/about" className="max-w-[250px] group">
           <div className='flex items-center space-x-4 group-hover:underline'>
           <TypographyH2>About</TypographyH2>
