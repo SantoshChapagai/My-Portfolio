@@ -11,15 +11,16 @@ import { IoIosContacts } from "react-icons/io";
 export default function Home() {
   return (
     <main>
-      <div className="flex lg:flex-row sm:flex-col flex-wrap lg:justify-center lg:items-center lg:space-x-10 pt-24 lg:px-16 h-2/3 ml-2">
-        <div className=''>
+      <div className="flex lg:flex-row sm:flex-col flex-wrap lg:justify-center lg:items-center lg:space-x-10 pt-24 lg:px-16 h-2/3">
+        <div className='ml-2'>
         <TypographyH1>Hello! I'm Santosh Chapagai</TypographyH1>
       <TypographyH3>A Full-Stack Developer <span className='transition duration-1000 ease-in animate-pulse'>👋</span></TypographyH3>
       <p className='max-w-[650px]'>I am a Master's in Business Administration graduate and a full stack developer. I am going to complete my full-stack program from Business College Helsinki. Currently, I am looking for an internship in the field of web development.</p>
+      <TypographyH3>Currently, I am studying: Typescript</TypographyH3>
       <button className='mt-5 sm:text-center'>Download CV</button>
         </div>
-        <div className='lg:bg-carolina dark:bg-black rounded-full w-96 mt-10'>
-         <Image src="/santosh.jpg" alt="santosh" width={768} height={512} className="object-contain rounded-full w-auto to lg:ml-5 mb-5"/>
+        <div className='lg:bg-carolina dark:bg-black rounded-tl-full w-96 mt-10'>
+         <Image src="/santosh.jpeg" alt="santosh" width={768} height={512} className="object-contain rounded-full w-80 mb-5 ml-6"/>
          </div>
          </div>
      

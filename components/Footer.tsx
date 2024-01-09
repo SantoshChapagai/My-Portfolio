@@ -12,11 +12,8 @@ const Footer = () => {
   const date= new Date();
   const year = date.getFullYear();
   return (
-    <div className='flex lg:flex-row sm:flex-col-reverse justify-between items-center flex-wrap mt-10 border-t border-gray-200 px-6 py-10'>
-      <div>
-      <p>&copy;{year} Santosh. All rights reserved.</p>
-      </div>
-      <div className='flex space-x-4 mr-8'>
+    <div className='flex lg:flex-row-reverse  justify-between items-center flex-wrap border-t border-gray-200 px-6 py-10 bg-lilac dark:bg-black'>
+      <div className='flex space-x-4 mr-8 mb-2'>
         <Link href="https://www.facebook.com/santosh.chapagai.56" target="_blank">
           <FaFacebook size={32} />
         </Link>
@@ -32,6 +29,9 @@ const Footer = () => {
         <Link href="mailto:santoshchapagai100@gmail.com">
         <MdMailOutline size={32} />
         </Link>
+      </div>
+      <div>
+      <p>&copy;{year} Santosh. All rights reserved.</p>
       </div>
     </div>
   )

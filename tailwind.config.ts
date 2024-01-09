@@ -14,6 +14,8 @@ module.exports = {
         "dark": "#232A3C",
         "medium": "#293245",
         "carolina": "#86BBD8",
+        "lilac":"#CFADBE",
+        "lavender": "#DED4F3",
       }
     },
   },

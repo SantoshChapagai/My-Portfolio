@@ -21,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="relative min-h-screen text-black dark:bg-black dark:text-white">
         <Navbar />
+        <div className='bg-lavender dark:bg-black pb-8'>
         {children}
+        </div>
         <Footer />
         <div className='absolute bottom-8 right-10'>
         <TopButton/>
