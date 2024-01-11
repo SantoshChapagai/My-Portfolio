@@ -16,6 +16,20 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiMocha } from "react-icons/si";
 import { SiSonarcloud } from "react-icons/si";
 import TypographyH3 from '@/components/typography/h3';
+import { SiMicrosoftexcel } from "react-icons/si";
+import { FaFilePowerpoint } from "react-icons/fa";
+import { GrPlan } from "react-icons/gr";
+import { PiStrategyBold } from "react-icons/pi";
+import { IoMdTime } from "react-icons/io";
+import { GiArchiveResearch } from "react-icons/gi";
+import { MdAccountBalance } from "react-icons/md";
+import { RiTeamFill } from "react-icons/ri";
+import { PiFigmaLogoBold } from "react-icons/pi";
+import { FaDocker } from "react-icons/fa";
+import { FaGithubAlt } from "react-icons/fa6";
+import { FaTrello } from "react-icons/fa6";
+
+
 
 const Skills = () => {
   return (
@@ -98,6 +112,60 @@ const Skills = () => {
           <SiSonarcloud size={175}/>
           <TypographyH3>SonarCloud</TypographyH3>
           </div>
+          <div className='flex flex-col justify-center items-center'>
+          <PiFigmaLogoBold size={175}/>
+          <TypographyH3>Figma</TypographyH3>
+          </div>
+          <div className='flex flex-col justify-center items-center'>
+          <FaDocker size={175}/>
+          <TypographyH3>Docker</TypographyH3>
+          </div>
+          <div className='flex flex-col justify-center items-center'>
+          <FaGithubAlt size={175}/>
+          <TypographyH3>Git</TypographyH3>
+          </div>
+          <div className='flex flex-col justify-center items-center'>
+          <FaTrello size={175}/>
+          <TypographyH3>Trello</TypographyH3>
+          </div>
+        </div>
+      </div>
+      <div>
+        <TypographyH2>Others</TypographyH2>
+        <div className='lg:grid gap-4 grid-cols-4'>
+          <div className='flex flex-col justify-center items-center'>
+          <SiMicrosoftexcel size={175} />
+          <TypographyH3>Excel</TypographyH3>
+          </div>
+          <div className='flex flex-col justify-center items-center'>
+          <FaFilePowerpoint size={175} />
+          <TypographyH3>PowerPoint</TypographyH3>
+          </div>
+          <div className='flex flex-col justify-center items-center'>
+          <GrPlan size={175} />
+          <TypographyH3>Planning</TypographyH3>
+          </div>
+          <div className='flex flex-col justify-center items-center'>
+          <PiStrategyBold size={175} />
+          <TypographyH3>Strategic management</TypographyH3>
+          </div>
+          <div className='flex flex-col justify-center items-center'>
+          <IoMdTime size={175} />
+          <TypographyH3>Time management</TypographyH3>
+          </div>
+          <div className='flex flex-col justify-center items-center'>
+          <GiArchiveResearch size={175} />
+          <TypographyH3>Quantitative and qualitative research</TypographyH3>
+          </div>
+          <div className='flex flex-col justify-center items-center'>
+          <MdAccountBalance size={175} />
+          <TypographyH3>Accounting and finance</TypographyH3>
+          </div>
+          <div className='flex flex-col justify-center items-center'>
+          <RiTeamFill size={175} />
+          <TypographyH3>Team work</TypographyH3>
+          </div>
+          
         </div>
       </div>
       
