@@ -1,5 +1,9 @@
+"use client"
 import TypographyH3 from '@/components/typography/h3'
 import React from 'react'
+import Video from "next-video"
+
+
 
 const Projects = () => {
   return (
@@ -23,6 +27,10 @@ const Projects = () => {
         <div>
           <TypographyH3>ToDo</TypographyH3>
           <p>Built with Node, EJS, MongoDb, and CSS. It is the simple app where the current date is displayed on the top and user can add the todo ietm on the list. User can also mark the completed task clicking the checkbox.</p>
+          <div className='rounded-3xl w-96'>
+          <Video src="/videos/keeper.mp4" autoplay className="w-72 object-contain rounded-full"/>
+          </div>
+          
         </div>
       </div>
     </div>

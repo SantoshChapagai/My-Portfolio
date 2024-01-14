@@ -41,7 +41,7 @@ const About = () => {
           </ul>
           </div>
         </Link>
-        <Link href="https://seamk.fi/" target="_blank" className='flex justify-around transition-all rounded-3xl group'>
+        <Link href="https://seamk.fi/" target="_blank" className='flex justify-center items-center transition-all rounded-3xl group'>
         <div className='mb-2 overflow-hidden aspect-w-16 aspect-h-10 rounded-xl'>
           <Image src="/seamk.png" alt="Seinäjoki" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-110"/>
           </div>
@@ -60,9 +60,9 @@ const About = () => {
           </ul>
           </div>
         </Link>
-        <Link href="https://centria.fi/" target="_blank" className='flex justify-center transition-all rounded-3xl group'>
+        <Link href="https://centria.fi/" target="_blank" className='flex justify-center items-center transition-all rounded-3xl group'>
         <div className='mb-2 overflow-hidden aspect-w-16 aspect-h-10 rounded-xl'>
-          <Image src="/centria.png" alt="Centria" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-110"/>
+          <Image src="/centria.png" alt="Centria" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-110 p-4 mr-4"/>
           </div>
           <div>
           <h2 className='text-xl font-bold'>Master's in Business Administration, International Business</h2>
@@ -81,7 +81,7 @@ const About = () => {
         </Link>
         <Link href="https://www.bc.fi/" target="_blank" className='flex justify-center transition-all rounded-3xl group'>
         <div className='mb-2 overflow-hidden aspect-w-16 aspect-h-10 rounded-xl'>
-          <Image src="/BCH.png" alt="BCH" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-110"/>
+          <Image src="/BCH.png" alt="BCH" width={768} height={512} className="object-contain rounded-3xl h-64 w-64 transition-transform duration-700 transform group-hover:scale-110 p-4 mr-4"/>
           </div>
         <div>
           <h2 className='text-xl font-bold'>Full-Stack Web Development</h2>
