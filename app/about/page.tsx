@@ -25,9 +25,9 @@ const About = () => {
       <div className='mt-10'>
         <TypographyH2>Educational Background</TypographyH2>
         <div className='grid grid-cols-2 gap-8 mt-12'>
-        <Link href="https://tu.edu.np/" target="_blank" className='flex justify-around transition-all rounded-3xl group'>
+        <Link href="https://tu.edu.np/" target="_blank" className='flex justify-center items-center transition-all rounded-3xl group'>
           <div className='mb-2 overflow-hidden aspect-w-16 aspect-h-10 rounded-xl'>
-          <Image src="/tu.png" alt="TU" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-125"/>
+          <Image src="/tu.png" alt="TU" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-110"/>
           </div>
          <div>
          <h3 className='text-xl font-bold'>Bachelor's Degree in Business Studies</h3>
@@ -43,7 +43,7 @@ const About = () => {
         </Link>
         <Link href="https://seamk.fi/" target="_blank" className='flex justify-around transition-all rounded-3xl group'>
         <div className='mb-2 overflow-hidden aspect-w-16 aspect-h-10 rounded-xl'>
-          <Image src="/seamk.png" alt="Seinäjoki" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-125"/>
+          <Image src="/seamk.png" alt="Seinäjoki" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-110"/>
           </div>
           <div className='ml-8'>
           <h3 className='text-xl font-bold'>Bachelor's in Business Administration, International Business</h3>
@@ -60,9 +60,9 @@ const About = () => {
           </ul>
           </div>
         </Link>
-        <Link href="https://centria.fi/" target="_blank" className='flex justify-around transition-all rounded-3xl group'>
+        <Link href="https://centria.fi/" target="_blank" className='flex justify-center transition-all rounded-3xl group'>
         <div className='mb-2 overflow-hidden aspect-w-16 aspect-h-10 rounded-xl'>
-          <Image src="/centria.png" alt="Centria" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-125"/>
+          <Image src="/centria.png" alt="Centria" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-110"/>
           </div>
           <div>
           <h2 className='text-xl font-bold'>Master's in Business Administration, International Business</h2>
@@ -79,9 +79,9 @@ const About = () => {
           </ul>
           </div>
         </Link>
-        <Link href="https://www.bc.fi/" target="_blank" className='flex justify-around transition-all rounded-3xl group'>
+        <Link href="https://www.bc.fi/" target="_blank" className='flex justify-center transition-all rounded-3xl group'>
         <div className='mb-2 overflow-hidden aspect-w-16 aspect-h-10 rounded-xl'>
-          <Image src="/BCH.jpeg" alt="BCH" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-125"/>
+          <Image src="/BCH.png" alt="BCH" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-110"/>
           </div>
         <div>
           <h2 className='text-xl font-bold'>Full-Stack Web Development</h2>
