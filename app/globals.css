@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer base{
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -10,5 +10,9 @@
   --background-caroline: 134, 187, 216;
   --background-lilac: 207, 173, 190;
   --background-lavender: 222, 212, 243;
+  --accent: hsl(325, 100%, 89%);
 }
-
+.dark{
+  --accent: hsl(254, 23%, 21%);
+}
+}

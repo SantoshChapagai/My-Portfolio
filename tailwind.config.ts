@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       keyframes:{
-        spin:{
+        round:{
           '0%': {
             transform: 'rotate(0deg)',
           },
@@ -22,7 +22,7 @@ module.exports = {
 
       },
       animation:{
-          spin: "spin 20s linear infinite"
+          round: "round 20s linear infinite"
       },
       colors:{
         "dark": "#232A3C",
@@ -30,6 +30,9 @@ module.exports = {
         "carolina": "#86BBD8",
         "lilac":"#CFADBE",
         "lavender": "#DED4F3",
+        accent: {
+          DEFAULT: "var(--accent)",
+        },
       }
     },
   },
