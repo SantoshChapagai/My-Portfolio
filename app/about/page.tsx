@@ -24,8 +24,8 @@ const About = () => {
        
       <div className='mt-10'>
         <TypographyH2>Educational Background</TypographyH2>
-        <div className='grid grid-cols-2 gap-8 mt-12'>
-        <Link href="https://tu.edu.np/" target="_blank" className='flex justify-center items-center transition-all rounded-3xl group'>
+        <div className='lg:grid grid-cols-2 gap-8 mt-12'>
+        <Link href="https://tu.edu.np/" target="_blank" className='flex justify-center items-center transition-all rounded-3xl group' style={{width:"50rem"}}>
           <div className='mb-2 overflow-hidden aspect-w-16 aspect-h-10 rounded-xl'>
           <Image src="/tu.png" alt="TU" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-110"/>
           </div>
@@ -41,7 +41,7 @@ const About = () => {
           </ul>
           </div>
         </Link>
-        <Link href="https://seamk.fi/" target="_blank" className='flex justify-center items-center transition-all rounded-3xl group'>
+        <Link href="https://seamk.fi/" target="_blank" className='flex justify-center items-center transition-all rounded-3xl group' style={{width:"50rem"}}>
         <div className='mb-2 overflow-hidden aspect-w-16 aspect-h-10 rounded-xl'>
           <Image src="/seamk.png" alt="Seinäjoki" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-110"/>
           </div>
@@ -60,7 +60,7 @@ const About = () => {
           </ul>
           </div>
         </Link>
-        <Link href="https://centria.fi/" target="_blank" className='flex justify-center items-center transition-all rounded-3xl group'>
+        <Link href="https://centria.fi/" target="_blank" className='flex justify-center items-center transition-all rounded-3xl group' style={{width:"40rem"}}>
         <div className='mb-2 overflow-hidden aspect-w-16 aspect-h-10 rounded-xl'>
           <Image src="/centria.png" alt="Centria" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-110 p-4 mr-4"/>
           </div>
@@ -79,9 +79,9 @@ const About = () => {
           </ul>
           </div>
         </Link>
-        <Link href="https://www.bc.fi/" target="_blank" className='flex justify-center transition-all rounded-3xl group'>
+        <Link href="https://www.bc.fi/" target="_blank" className='flex justify-center transition-all rounded-3xl group' style={{width:"50rem"}}>
         <div className='mb-2 overflow-hidden aspect-w-16 aspect-h-10 rounded-xl'>
-          <Image src="/BCH.png" alt="BCH" width={768} height={512} className="object-contain rounded-3xl h-64 w-64 transition-transform duration-700 transform group-hover:scale-110 p-4 mr-4"/>
+          <Image src="/BCH.png" alt="BCH" width={768} height={512} className="object-contain rounded-3xl h-72 w-72 transition-transform duration-700 transform group-hover:scale-110 p-4 mr-4"/>
           </div>
         <div>
           <h2 className='text-xl font-bold'>Full-Stack Web Development</h2>
@@ -101,7 +101,7 @@ const About = () => {
         </div>
       </div>
       <div className='mt-10'>
-        <TypographyH2>Hobbies</TypographyH2>
+        <TypographyH2>What I do in free time?</TypographyH2>
       </div>
       <div>
         <div>
