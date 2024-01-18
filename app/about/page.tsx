@@ -50,7 +50,7 @@ const About = () => {
           <h3 className='font-bold mb-5'>Seinäjoki University of Applied Sciences</h3>
           <h4 className='group-hover:font-bold underline'>Major courses</h4>
           <ul>
-            <li>Business planning</li>
+            <li className='group-hover:bg-orange-200 w-fit p-1'>Business planning</li>
             <li>Market research</li>
             <li>Accounting</li>
             <li>Interntaional business management</li>
