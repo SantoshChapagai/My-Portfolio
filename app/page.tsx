@@ -7,6 +7,12 @@ import { ImProfile } from "react-icons/im";
 import { GiSkills } from "react-icons/gi";
 import { GrProjects } from "react-icons/gr";
 import { IoIosContacts } from "react-icons/io";
+import {Overpass} from "next/font/google"
+const overPass = Overpass({
+  weight: "400",
+  subsets: ['latin'],
+
+})
 
 export default function Home() {
   return (
@@ -15,7 +21,7 @@ export default function Home() {
         <div className='ml-2'>
         <TypographyH1>Hello! I'm Santosh Chapagai</TypographyH1>
       <TypographyH3>A Full-Stack Developer <span className='transition duration-1000 ease-in animate-pulse'>👋</span></TypographyH3>
-      <p className='max-w-[650px]'>I am a Master's in Business Administration graduate and a full stack developer. I am going to complete my full-stack program from Business College Helsinki. Currently, I am looking for an internship in the field of web development.</p>
+      <p className={`${overPass.className} max-w-[650px]`}>I am a Master's in Business Administration graduate and a full stack developer. I am going to complete my full-stack program from Business College Helsinki. Currently, I am looking for an internship in the field of web development.</p>
       <TypographyH3>Currently, I am studying: Typescript</TypographyH3>
       <button className='mt-5 sm:text-center'>Download CV</button>
         </div>
