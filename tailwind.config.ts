@@ -33,6 +33,9 @@ module.exports = {
         accent: {
           DEFAULT: "var(--accent)",
         },
+        heading:{
+          DEFAULT: "var(--heading)",
+        },
       }
     },
   },

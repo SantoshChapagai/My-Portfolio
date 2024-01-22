@@ -11,8 +11,10 @@
   --background-lilac: 207, 173, 190;
   --background-lavender: 222, 212, 243;
   --accent: hsl(325, 100%, 89%);
+  --heading: 0 0 0;
 }
 .dark{
   --accent: hsl(254, 23%, 21%);
+  --heading: hsl(30, 100%, 50%);
 }
 }
