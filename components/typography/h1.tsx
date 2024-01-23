@@ -9,7 +9,7 @@ export default function TypographyH1({
   children: React.ReactNode
 }) {
   return (
-    <h1 className={`${outfit.className} text-3xl text-heading font-bold scroll-m-20 my-4`}>
+    <h1 className={`${outfit.className} text-3xl scroll-m-20 my-4`}>
       {children}
     </h1>
 

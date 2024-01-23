@@ -25,7 +25,7 @@ export default function Home() {
       <TypographyH3>Currently, I am studying: Typescript</TypographyH3>
       <button className='mt-5 sm:text-center'>Download CV</button>
         </div>
-        <div className='lg:bg-carolina dark:bg-black rounded-tl-full w-96 mt-10'>
+        <div className='lg:bg-imageBackground  rounded-tl-full w-96 mt-10'>
          <Image src="/santosh.jpeg" alt="santosh" width={768} height={512} className="object-contain rounded-full w-80 mb-5 ml-6"/>
          </div>
          </div>

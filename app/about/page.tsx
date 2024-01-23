@@ -17,7 +17,7 @@ const About = () => {
        <p>Fortunately, I was admitted to the <strong>Full Stack Developer program</strong> at Business College Helsinki, where I've had the privilege of immersing myself in cutting-edge technologies such as React and Drupal. Over the course of a year, the once-daunting journey has become increasingly manageable and realistic through consistent practice and patience. This transition has been an enlightening experience, fostering a deep appreciation for the intricacies of programming and development. I find particular fascination and enjoyment in exploring the capabilities of technologies like React and Drupal, discovering their potential applications and versatility within the digital landscape.</p>
       
        </div>
-       <div className='lg:bg-carolina rounded-tr-full rounded-bl-full mt-10'>
+       <div className='lg:bg-imageBackground rounded-tr-full rounded-bl-full mt-10'>
         <Image src="/santosh.jpg" width={768} height={512} className="object-cover h-80 w-80 rounded-3xl mt-10" />
        </div>
        </div>

@@ -25,16 +25,29 @@ module.exports = {
           round: "round 20s linear infinite"
       },
       colors:{
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        border: "var(--border)",
         "dark": "#232A3C",
         "medium": "#293245",
         "carolina": "#86BBD8",
         "lilac":"#CFADBE",
         "lavender": "#DED4F3",
+        primary:{
+          DEFAULT: "var(--primary)",
+        },
+        imageBackground:{
+         DEFAULT: "var(--imageBackground)"
+        },
         accent: {
           DEFAULT: "var(--accent)",
         },
-        heading:{
-          DEFAULT: "var(--heading)",
+        navbar:{
+          DEFAULT: "var(--navbar)",
+          foreground:"var(--navbar-foreground)"
+        },
+        main:{
+          DEFAULT: "var(--main)",
         },
       }
     },

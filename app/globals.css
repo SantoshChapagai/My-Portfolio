@@ -11,10 +11,28 @@
   --background-lilac: 207, 173, 190;
   --background-lavender: 222, 212, 243;
   --accent: hsl(325, 100%, 89%);
-  --heading: 0 0 0;
+
+ 
+  --primary: hsl(0, 0%, 0%);
+
+  --imageBackground: hsl(216 , 98% , 77%);
+ 
+  --main: hsl(0, 0%, 0%);
+
+  --navbar: hsl(185, 96%, 90%); /*rgb(207 250 254)*/
+  --navbar-foreground: hsl(0, 0%, 0%);
 }
 .dark{
   --accent: hsl(254, 23%, 21%);
-  --heading: hsl(30, 100%, 50%);
+
+ 
+  --primary: hsl(0, 100%, 100%);
+
+ --imageBackground:hsl(30, 100%, 50%);
+ 
+  --main: hsl(30, 100%, 50%);
+
+  --navbar: hsl(0, 0%, 0%);
+  --navbar-foreground: hsl(0, 100%, 100%);
 }
 }

@@ -32,7 +32,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`${lemon.className} w-full mx-auto flex justify-between items-center lg:px-12 h-24 py-4 bg-cyan-100 dark:bg-black fixed z-50`} >
+    <div className={`${lemon.className} w-full mx-auto flex justify-between items-center lg:px-12 h-24 py-4 bg-navbar text-navbar-foreground fixed z-50`} >
       <div className='ml-2'>
         <Link href='/' className='flex items-center space-x-4'>
           <Image src='/logo.png' height={300} width={300} className='h-20 w-20' />
