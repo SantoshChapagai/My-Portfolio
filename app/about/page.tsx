@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className='min-h-screen pt-24 p-24 bg-blender'>
       <div className='flex justify-center space-x-10'>
-      <div className='max-w-[750px] mt-5 '>
+      <div className='max-w-[750px] mt-5  text-primary'>
         <p>
         I am a graduate of a <strong>Master's of Business Administration</strong>, specializing in International Business. Now, I'm learning all about making websites at Business College Helsinki. For about a year, I've been learning about cool things like React and Drupal in my classes. I also took a course on making whole websites using React and Node JS on Udemy. When I'm not studying, I love exploring nature. I also play sports, spend time gaming on my PS4, and hang out with my family and friends. I'm excited about mixing my business skills with what I'm learning in tech. The world of making websites keeps changing, and I find it super interesting. I'm always curious about new things in web development.
         </p>

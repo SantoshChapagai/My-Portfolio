@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='min-h-screen pt-24 flex justify-center items-center'>
+    <div className='min-h-screen pt-24 flex justify-center items-center text-primary'>
       <div>
         <p>All the fields marked with * are required.</p>
         <form>
@@ -22,7 +22,7 @@ const Contact = () => {
           <label htmlFor="messgae">Message*</label>
           <textarea className='lg:w-96 md:w-84 h-32 rounded-xl p-4 mt-2' id="message" placeholder='Enter your message'/>
           </div>
-          <div className='flex justify-center items-center w-24 h-8 rounded-xl'>
+          <div className='flex justify-center items-center w-24 h-8 rounded-xl bg-primary text-accent'>
            <button type='submit'>Send</button>
           </div>
         </form>
