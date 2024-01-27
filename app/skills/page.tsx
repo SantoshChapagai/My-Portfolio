@@ -36,133 +36,133 @@ const Skills = () => {
     <div className='min-h-screen p-24 text-primary'>
       <div>
       <TypographyH2>Front End</TypographyH2>
-      <div className='lg:grid gap-4 grid-cols-4'>
+      <div className='grid gap-4 grid-cols-2 lg:grid-cols-8 md:grid-cols-6'>
         <div className='flex flex-col justify-center items-center'>
-        <FaHtml5 size={175}/>
+        <FaHtml5 size={72}/>
         <TypographyH3>HTML</TypographyH3>
         </div>
         <div className='flex flex-col justify-center items-center'>
-        <FaCss3 size={175} />
+        <FaCss3 size={72} />
         <TypographyH3>CSS</TypographyH3>
         </div>
         <div className='flex flex-col justify-center items-center'>
-        <IoLogoJavascript size={175} />
+        <IoLogoJavascript size={72} />
         <TypographyH3>JavaScript</TypographyH3>
         </div>
         <div className='flex flex-col justify-center items-center'>
-        <FaReact size={175} />
+        <FaReact size={72} />
         <TypographyH3>React</TypographyH3>
         </div>
         <div className='flex flex-col justify-center items-center'>
-        <TbBrandNextjs size={175} />
+        <TbBrandNextjs size={72} />
         <TypographyH3>NextJs</TypographyH3>
         </div>
       </div>
       </div>
       <div>
       <TypographyH2>Backend</TypographyH2>
-      <div className='lg:grid gap-4 grid-cols-4'>
+      <div className='grid gap-4 grid-cols-2 lg:grid-cols-8 md:grid-cols-6'>
         <div className='flex flex-col justify-center items-center'>
-        <FaPhp size={175} />
+        <FaPhp size={72} />
         <TypographyH3>PHP</TypographyH3>
         </div>
         <div className='flex flex-col justify-center items-center'>
-        <FaDrupal size={175} />
+        <FaDrupal size={72} />
         <TypographyH3>Drupal</TypographyH3>
         </div>
         <div className='flex flex-col justify-center items-center'>
-        <FaNodeJs size={175} />
+        <FaNodeJs size={72} />
         <TypographyH3>NodeJs</TypographyH3>
         </div>
       </div>
       </div>
       <div>
       <TypographyH2>Databases</TypographyH2>
-      <div className='lg:grid gap-4 grid-cols-4'>
+      <div className='grid gap-4 grid-cols-2 lg:grid-cols-8 md:grid-cols-6'>
         <div className='flex flex-col justify-center items-center'>
-        <DiMongodb size={175} /> 
+        <DiMongodb size={72} /> 
         <TypographyH3>MongoDB</TypographyH3>
         </div>
         <div className='flex flex-col justify-center items-center'>
-        <DiMysql size={175} />
+        <DiMysql size={72} />
         <TypographyH3>MySql</TypographyH3>
         </div>
       </div>
       </div>
       <div>
         <TypographyH2> Tools </TypographyH2>
-        <div className='lg:grid gap-4 grid-cols-4'>
+        <div className='grid gap-4 grid-cols-2 lg:grid-cols-8 md:grid-cols-6'>
           <div className='flex flex-col justify-center items-center'>
-          <FaAws size={175}/>
+          <FaAws size={72}/>
           <TypographyH3>AWS</TypographyH3>
           </div>
           <div className='flex flex-col justify-center items-center'>
-          <FaBootstrap size={175}/>
+          <FaBootstrap size={72}/>
           <TypographyH3>Bootstrap</TypographyH3>
           </div>
           <div className='flex flex-col justify-center items-center'>
-          <SiTailwindcss size={175}/>
+          <SiTailwindcss size={72}/>
           <TypographyH3>Tailwind</TypographyH3>
           </div>
           <div className='flex flex-col justify-center items-center'>
-          <SiMocha size={175}/>
+          <SiMocha size={72}/>
           <TypographyH3>Mocha</TypographyH3>
           </div>
           <div className='flex flex-col justify-center items-center'>
-          <SiSonarcloud size={175}/>
+          <SiSonarcloud size={72}/>
           <TypographyH3>SonarCloud</TypographyH3>
           </div>
           <div className='flex flex-col justify-center items-center'>
-          <PiFigmaLogoBold size={175}/>
+          <PiFigmaLogoBold size={72}/>
           <TypographyH3>Figma</TypographyH3>
           </div>
           <div className='flex flex-col justify-center items-center'>
-          <FaDocker size={175}/>
+          <FaDocker size={72}/>
           <TypographyH3>Docker</TypographyH3>
           </div>
           <div className='flex flex-col justify-center items-center'>
-          <FaGithubAlt size={175}/>
+          <FaGithubAlt size={72}/>
           <TypographyH3>Git</TypographyH3>
           </div>
           <div className='flex flex-col justify-center items-center'>
-          <FaTrello size={175}/>
+          <FaTrello size={72}/>
           <TypographyH3>Trello</TypographyH3>
           </div>
         </div>
       </div>
       <div>
         <TypographyH2>Others</TypographyH2>
-        <div className='lg:grid gap-4 grid-cols-4'>
+        <div className='grid gap-4 grid-cols-2 lg:grid-cols-8 md:grid-cols-6'>
           <div className='flex flex-col justify-center items-center'>
-          <SiMicrosoftexcel size={175} />
+          <SiMicrosoftexcel size={72} />
           <TypographyH3>Excel</TypographyH3>
           </div>
           <div className='flex flex-col justify-center items-center'>
-          <FaFilePowerpoint size={175} />
+          <FaFilePowerpoint size={72} />
           <TypographyH3>PowerPoint</TypographyH3>
           </div>
           <div className='flex flex-col justify-center items-center'>
-          <GrPlan size={175} />
+          <GrPlan size={72} />
           <TypographyH3>Planning</TypographyH3>
           </div>
           <div className='flex flex-col justify-center items-center'>
-          <PiStrategyBold size={175} />
+          <PiStrategyBold size={72} />
           <TypographyH3>Strategic management</TypographyH3>
           </div>
           <div className='flex flex-col justify-center items-center'>
-          <IoMdTime size={175} />
+          <IoMdTime size={72} />
           <TypographyH3>Time management</TypographyH3>
           </div>
           <div className='flex flex-col justify-center items-center'>
-          <GiArchiveResearch size={175} />
+          <GiArchiveResearch size={72} />
           <TypographyH3>Quantitative and qualitative research</TypographyH3>
           </div>
           <div className='flex flex-col justify-center items-center'>
-          <MdAccountBalance size={175} />
+          <MdAccountBalance size={72} />
           <TypographyH3>Accounting and finance</TypographyH3>
           </div>
           <div className='flex flex-col justify-center items-center'>
-          <RiTeamFill size={175} />
+          <RiTeamFill size={72} />
           <TypographyH3>Team work</TypographyH3>
           </div>
           
