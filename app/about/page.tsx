@@ -33,7 +33,7 @@ const About = () => {
          <h3 className='text-xl font-bold'>Bachelor's Degree in Business Studies</h3>
           <h3 className='font-bold mb-5'>Tribhuvan University</h3>
           <h4 className='group-hover:font-bold underline'>Major courses</h4>
-          <ul>
+          <ul className='text-primary'>
             <li>Accounting</li>
             <li>Finance</li>
             <li>Marketing</li>
@@ -49,7 +49,7 @@ const About = () => {
           <h3 className='text-xl font-bold'>Bachelor's in Business Administration, International Business</h3>
           <h3 className='font-bold mb-5'>Seinäjoki University of Applied Sciences</h3>
           <h4 className='group-hover:font-bold underline'>Major courses</h4>
-          <ul>
+          <ul className='text-primary'>
             <li>Business planning</li>
             <li >Market research</li>
             <li>Accounting</li>
@@ -68,7 +68,7 @@ const About = () => {
           <h2 className='text-xl font-bold'>Master's in Business Administration, International Business</h2>
           <h3 className='font-bold mb-5'>Centria University of Applied Aciences</h3>
           <h4 className='group-hover:font-bold underline'>Major courses</h4>
-          <ul>
+          <ul className='text-primary'>
             <li>International business management</li>
             <li>Strategic management</li>
             <li>Marketing strategy</li>
@@ -87,7 +87,7 @@ const About = () => {
           <h2 className='text-xl font-bold'>Full-Stack Web Development</h2>
           <h3 className='font-bold mb-5'>Business College Helsinki</h3>
           <h4 className='group-hover:font-bold underline'>Major courses</h4>
-          <ul>
+          <ul className='text-primary'>
             <li>HTML, CSS, and JavaScript</li>
             <li>Php and Symfony</li>
             <li>Responsive web design</li>

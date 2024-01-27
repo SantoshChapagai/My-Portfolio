@@ -18,10 +18,10 @@ export default function Home() {
   return (
     <main>
       <div className="flex lg:flex-row sm:flex-col flex-wrap lg:justify-center lg:items-center lg:space-x-10 pt-24 lg:px-16 h-2/3">
-        <div className='ml-2'>
+        <div className='ml-2 text-heading1'>
         <TypographyH1>Hello! I'm Santosh Chapagai</TypographyH1>
       <TypographyH3>A Full-Stack Developer <span className='transition duration-1000 ease-in animate-pulse'>👋</span></TypographyH3>
-      <p className={`${overPass.className} max-w-[650px]`}>I am a Master's in Business Administration graduate and a full stack developer. I am going to complete my full-stack program from Business College Helsinki. Currently, I am looking for an internship in the field of web development.</p>
+      <p className={`${overPass.className} max-w-[650px] text-primary`}>I am a Master's in Business Administration graduate and a full stack developer. I am going to complete my full-stack program from Business College Helsinki. Currently, I am looking for an internship in the field of web development.</p>
       <TypographyH3>Currently, I am studying: Typescript</TypographyH3>
       <button className='mt-5 sm:text-center'>Download CV</button>
         </div>

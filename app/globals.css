@@ -21,6 +21,8 @@
 
   --navbar: hsl(185, 96%, 90%); /*rgb(207 250 254)*/
   --navbar-foreground: hsl(0, 0%, 0%);
+
+  --heading1: hsl(240, 100%, 50%);
 }
 .dark{
   --accent: hsl(254, 23%, 21%);
@@ -34,5 +36,7 @@
 
   --navbar: hsl(0, 0%, 0%);
   --navbar-foreground: hsl(0, 100%, 100%);
+
+  --heading1: hsl(39, 100%, 50%);
 }
 }

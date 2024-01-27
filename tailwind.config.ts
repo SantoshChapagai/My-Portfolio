@@ -42,6 +42,9 @@ module.exports = {
         accent: {
           DEFAULT: "var(--accent)",
         },
+        heading1:{
+          DEFAULT: "var(--heading1)",
+        },
         navbar:{
           DEFAULT: "var(--navbar)",
           foreground:"var(--navbar-foreground)"
