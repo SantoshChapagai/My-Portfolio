@@ -12,7 +12,7 @@ const Footer = () => {
   const date= new Date();
   const year = date.getFullYear();
   return (
-    <div className='flex lg:flex-row-reverse  justify-between items-center flex-wrap border-t border-gray-200 px-6 py-10 bg-accent text-primary'>
+    <div className='flex lg:flex-row-reverse  justify-between items-center flex-wrap border-t border-gray-200 px-6 py-10 bg-footer text-footer-foreground'>
       <div className='flex space-x-4 mr-8 mb-2'>
         <Link href="https://www.facebook.com/santosh.chapagai.56" target="_blank">
           <FaFacebook size={32} />

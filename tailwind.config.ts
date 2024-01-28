@@ -37,25 +37,25 @@ module.exports = {
           DEFAULT: "var(--primary)",
           foreground: "var(--primary-foreground)",
         },
-        imageBackground:{
-         DEFAULT: "var(--imageBackground)"
-        },
-        accent: {
-          DEFAULT: "var(--accent)",
+        card:{
+         DEFAULT: "var(--card)",
         },
         heading1:{
           DEFAULT: "var(--heading1)",
         },
+        heading2:{
+          DEFAULT: "var(--heading2)",
+        },
+        heading3:{
+          DEFAULT: "var(--heading3)",
+        },
         navbar:{
           DEFAULT: "var(--navbar)",
-          foreground:"var(--navbar-foreground)"
+          foreground:"var(--navbar-foreground)",
         },
-        button:{
-          DEFAULT: "var(--button)",
-          foreground:"var(--button-foreground)"
-        },
-        main:{
-          DEFAULT: "var(--main)",
+        footer:{
+         DEFAULT: "var(--footer)",
+         foreground:"var(--footer-foreground)"
         },
       }
     },

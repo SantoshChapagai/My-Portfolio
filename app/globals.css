@@ -10,35 +10,50 @@
   --background-caroline: 134, 187, 216;
   --background-lilac: 207, 173, 190;
   --background-lavender: 222, 212, 243;
-  --accent: hsl(325, 100%, 89%);
+
 
  /* primary color */
   --primary: hsl(0, 0%, 0%);
   --primary-foreground: hsl(0, 100%, 100%);
 
-  --imageBackground: hsl(216 , 98% , 77%);
- 
-  --main: hsl(0, 0%, 0%);
+  /* Background color of the parent div of the personal photos */
+  --card: hsl(216 , 98% , 77%);
 
-  --navbar: hsl(185, 96%, 90%); /*rgb(207 250 254)*/
+  /* For the navbar in light more */
+  --navbar: hsl(186, 28%, 85%); /*rgb(207 250 254)*/
   --navbar-foreground: hsl(0, 0%, 0%);
 
+  /* For heading with h1 */
   --heading1: hsl(240, 100%, 50%);
-}
-.dark{
-  --accent: hsl(254, 23%, 21%);
+  --heading2: hsl(200, 92%, 26%);
+  --heading3: hsl(170, 95%, 23%);
 
- /* primary */
+  /* footer */
+  --footer: hsl(307, 16%, 89%);
+  --footer-foreground: hsl(0, 0%, 0%);
+}
+
+.dark{
+
+ /* primary for background and text*/
   --primary: hsl(0, 100%, 100%);
   --primary-foreground: hsl(0, 0%, 0%);
 
- --imageBackground:hsl(30, 100%, 50%);
- 
-  --main: hsl(30, 100%, 50%);
+  /* for the parent div of the images of personal photos */
+ --card:hsl(30, 100%, 50%);
 
+ /* For the navbar in the dark mode */
   --navbar: hsl(0, 0%, 0%);
   --navbar-foreground: hsl(0, 100%, 100%);
 
-  --heading1: hsl(39, 100%, 50%);
+  /* For headling elements */
+  --heading1: hsl(0, 100%, 90%);
+  --heading2: hsl(60, 56%, 91%);
+  --heading3: hsl(175, 40%, 89%);
+
+  /* Footer */
+  --footer: hsl(0, 0%, 0%);
+  --footer-foreground: hsl(0, 0%, 100%);
+
 }
 }
