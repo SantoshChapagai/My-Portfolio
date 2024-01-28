@@ -1,16 +1,22 @@
 "use client"
-import React,{useState} from 'react'
+import React, {useState} from 'react'
 
 const Contact = () => {
-  const [message, setMessage] = useState<string>("") 
-   const sendMessage = () =>{
-    setMessage("Message sent successfully!")
-   }
+  const [submit, setSubmit] = useState(false)
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmit(true);
+    setTimeout(()=>{
+      setSubmit(false);
+    }, 3000);
+  }
+
   return (
     <div className='min-h-screen pt-24 flex justify-center items-center text-primary'>
       <div>
         <p>All the fields marked with * are required.</p>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className='flex flex-col mb-5 mt-3'>
           <label htmlFor="fname">First name*</label>
           <input className='lg:w-96 md:w-84 h-12 rounded-xl p-4 mt-2' type="text" id="fname" placeholder='Enter your first name' required/>
@@ -28,10 +34,10 @@ const Contact = () => {
           <textarea className='lg:w-96 md:w-84 h-32 rounded-xl p-4 mt-2' id="message" placeholder='Enter your message' required/>
           </div>
           <div className='flex justify-center items-center w-24 h-8 rounded-xl bg-primary text-primary-foreground'>
-           <button type='submit' onClick={sendMessage}>Send</button>
+           <button type='submit'>Send</button>
           </div>
         </form>
-        {message && <p>{message}</p>}
+        {submit &&(<p>Message Sent successfully!</p>)}
       </div>
     </div>
   )
