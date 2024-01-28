@@ -35,6 +35,7 @@ module.exports = {
         "lavender": "#DED4F3",
         primary:{
           DEFAULT: "var(--primary)",
+          foreground: "var(--primary-foreground)",
         },
         imageBackground:{
          DEFAULT: "var(--imageBackground)"
@@ -48,6 +49,10 @@ module.exports = {
         navbar:{
           DEFAULT: "var(--navbar)",
           foreground:"var(--navbar-foreground)"
+        },
+        button:{
+          DEFAULT: "var(--button)",
+          foreground:"var(--button-foreground)"
         },
         main:{
           DEFAULT: "var(--main)",

@@ -1,6 +1,11 @@
-import React from 'react'
+"use client"
+import React,{useState} from 'react'
 
 const Contact = () => {
+  const [message, setMessage] = useState<string>("") 
+   const sendMessage = () =>{
+    setMessage("Message sent successfully!")
+   }
   return (
     <div className='min-h-screen pt-24 flex justify-center items-center text-primary'>
       <div>
@@ -20,12 +25,13 @@ const Contact = () => {
           </div>
           <div className='flex flex-col mb-5'>
           <label htmlFor="messgae">Message*</label>
-          <textarea className='lg:w-96 md:w-84 h-32 rounded-xl p-4 mt-2' id="message" placeholder='Enter your message'/>
+          <textarea className='lg:w-96 md:w-84 h-32 rounded-xl p-4 mt-2' id="message" placeholder='Enter your message' required/>
           </div>
-          <div className='flex justify-center items-center w-24 h-8 rounded-xl bg-primary text-accent'>
-           <button type='submit'>Send</button>
+          <div className='flex justify-center items-center w-24 h-8 rounded-xl bg-primary text-primary-foreground'>
+           <button type='submit' onClick={sendMessage}>Send</button>
           </div>
         </form>
+        {message && <p>{message}</p>}
       </div>
     </div>
   )

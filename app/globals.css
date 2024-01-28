@@ -12,8 +12,9 @@
   --background-lavender: 222, 212, 243;
   --accent: hsl(325, 100%, 89%);
 
- 
+ /* primary color */
   --primary: hsl(0, 0%, 0%);
+  --primary-foreground: hsl(0, 100%, 100%);
 
   --imageBackground: hsl(216 , 98% , 77%);
  
@@ -27,8 +28,9 @@
 .dark{
   --accent: hsl(254, 23%, 21%);
 
- 
+ /* primary */
   --primary: hsl(0, 100%, 100%);
+  --primary-foreground: hsl(0, 0%, 0%);
 
  --imageBackground:hsl(30, 100%, 50%);
  
