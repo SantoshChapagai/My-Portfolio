@@ -33,12 +33,12 @@ import { FaTrello } from "react-icons/fa6";
 
 const Skills = () => {
   return (
-    <div className='min-h-screen px-24 pt-24 text-primary'>
+    <div className='min-h-screen px-20 lg:px-24 pt-24 text-primary'>
       <div>
-        <div className='text-heading2 text-center p-4'>
-      <TypographyH2>Front End</TypographyH2>
+        <div className='text-heading2 p-6'>
+      <TypographyH2>FrontEnd</TypographyH2>
       </div>
-      <div className='grid gap-x-24 gap-y-4 lg:gap-x-4 grid-cols-3 lg:grid-cols-8 md:grid-cols-6'>
+      <div className='grid gap-x-24 gap-y-4 grid-cols-3 lg:grid-cols-8 md:grid-cols-6'>
         <div className='flex flex-col justify-center items-center'>
         <FaHtml5 size={72}/>
         <TypographyH3>HTML</TypographyH3>
@@ -62,7 +62,9 @@ const Skills = () => {
       </div>
       </div>
       <div>
+      <div className='text-heading2 p-6'>
       <TypographyH2>Backend</TypographyH2>
+      </div>
       <div className='grid gap-x-24 gap-y-4 lg:gap-x-4 grid-cols-3 lg:grid-cols-8 md:grid-cols-6'>
         <div className='flex flex-col justify-center items-center'>
         <FaPhp size={72} />
@@ -79,7 +81,9 @@ const Skills = () => {
       </div>
       </div>
       <div>
+      <div className='text-heading2 p-6'>
       <TypographyH2>Databases</TypographyH2>
+      </div>
       <div className='grid gap-4 grid-cols-2 lg:grid-cols-8 md:grid-cols-6'>
         <div className='flex flex-col justify-center items-center'>
         <DiMongodb size={72} /> 
@@ -92,8 +96,10 @@ const Skills = () => {
       </div>
       </div>
       <div>
+      <div className='text-heading2 p-6'>
         <TypographyH2> Tools </TypographyH2>
-        <div className='grid gap-x-24 gap-y-5 lg:gap-x-4 grid-cols-3 lg:grid-cols-8 md:grid-cols-6'>
+        </div>
+        <div className='grid gap-x-28 gap-y-5 lg:gap-x-4 grid-cols-3 lg:grid-cols-8 md:grid-cols-6'>
           <div className='flex flex-col justify-center items-center'>
           <FaAws size={72}/>
           <TypographyH3>AWS</TypographyH3>
@@ -133,8 +139,10 @@ const Skills = () => {
         </div>
       </div>
       <div>
+      <div className='text-heading2 p-6'>
         <TypographyH2>Others</TypographyH2>
-        <div className='grid gap-x-24 lg:gap-x-4 grid-cols-2 lg:grid-cols-8 md:grid-cols-6'>
+        </div>
+        <div className='grid gap-x-32 lg:gap-x-4 grid-cols-2 lg:grid-cols-8 md:grid-cols-6'>
           <div className='flex flex-col justify-center items-center'>
           <SiMicrosoftexcel size={72} />
           <TypographyH3>Excel</TypographyH3>

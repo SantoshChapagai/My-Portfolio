@@ -40,9 +40,9 @@ const TopButton = () => {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="bg-gray-500 text-white rounded-full p-3 hover:bg-gray-600 focus:outline-none -rotate-45"
+          className="bg-primary text-primary-foreground rounded-full p-3 focus:outline-none -rotate-45"
         >
-          <TfiArrowTopRight size={18} />
+          <TfiArrowTopRight size={24} />
         </button>
       )}
     </div>
