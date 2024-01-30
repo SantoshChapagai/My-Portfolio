@@ -38,7 +38,7 @@ const Skills = () => {
         <div className='text-heading2 p-6'>
       <TypographyH2>FrontEnd</TypographyH2>
       </div>
-      <div className='grid gap-x-24 gap-y-4 grid-cols-3 lg:grid-cols-8 md:grid-cols-6'>
+      <div className='grid gap-x-24 lg:gap-x-4 gap-y-4 grid-cols-3 lg:grid-cols-8 md:grid-cols-6'>
         <div className='flex flex-col justify-center items-center'>
         <FaHtml5 size={72}/>
         <TypographyH3>HTML</TypographyH3>
