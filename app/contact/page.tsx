@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='h-screen overflow-hidden flex justify-center items-center text-primary'>
+    <div className='min-h-screen pt-32 overflow-hidden flex justify-center items-center text-primary'>
       <div>
         <p>All the fields marked with * are required.</p>
         <form onSubmit={handleSubmit}>
