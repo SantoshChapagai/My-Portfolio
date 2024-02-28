@@ -3,6 +3,10 @@ import React from 'react'
 import Image from 'next/image'
 import Link from "next/link";
 import TypographyH3 from '@/components/typography/h3';
+import { IoBookSharp } from "react-icons/io5";
+import { FaPlaneDeparture } from "react-icons/fa";
+import { PiTelevisionSimpleBold } from "react-icons/pi";
+import TypographyH1 from '@/components/typography/h1';
 
 
 const About = () => {
@@ -26,14 +30,13 @@ const About = () => {
         <div className='text-heading2 text-center underline'>
         <TypographyH2>Educational Background</TypographyH2>
         </div>
-        <div className='lg:grid grid-cols-2 mt-2 lg:mt-12'>
+        <div className='lg:grid grid-cols-2 mt-2 lg:mt-12 space-y-6'>
         <Link href="https://tu.edu.np/" target="_blank" className='lg:flex items-center group'>
-          <div className='lg:mb-2 overflow-hidden'>
-          <Image src="/tu.png" alt="TU" width={768} height={512} className="object-contain h-28 lg:h-72 w-72 mt-4 transition-transform duration-700 group-hover:scale-110"/>
+          <div className='lg:mb-2 w-64 h-64 p-4 overflow-hidden rounded-br-full bg-white transition-transform duration-700 group-hover:scale-110'>
+         <TypographyH1>Tribhuvan University</TypographyH1>
+         <TypographyH3 >Bachelor's Degree in Business Studies</TypographyH3>
           </div>
          <div className='text-heading3'>
-         <TypographyH3 >Bachelor's Degree in Business Studies</TypographyH3>
-          <TypographyH3>Tribhuvan University</TypographyH3>
           <TypographyH3>Major courses</TypographyH3>
           <ul className='text-primary mx-4'>
             <li>Accounting</li>
@@ -45,15 +48,14 @@ const About = () => {
           </ul>
           </div>
         </Link>
-        <Link href="https://seamk.fi/" target="_blank" className='lg:flex justify-evenly items-center group'>
-          <div className='mb-2 overflow-hidden'>
-          <Image src="/seamk.png" alt="SeAMK" width={768} height={512} className="object-contain h-28 lg:h-72 w-72 transition-transform duration-700 group-hover:scale-110 mt-4 ml-4"/>
+        <Link href="https://seamk.fi/" target="_blank" className='lg:flex items-center group'>
+        <div className='lg:mb-2 flex flex-col justify-start items-center w-64 h-64 p-4 overflow-hidden rounded-br-full bg-white transition-transform duration-700 group-hover:scale-110'>
+        <TypographyH1>Seinäjoki UAS</TypographyH1>
+        <TypographyH3>Bachelor's in International Business</TypographyH3>
           </div>
          <div className='text-heading3 mx-4'>
-         <TypographyH3 >Bachelor's in Business Administration</TypographyH3>
-          <TypographyH3>Seinäjoki UAS</TypographyH3>
           <TypographyH3>Major courses</TypographyH3>
-          <ul className='text-primary mx-4'>
+          <ul className='text-primary'>
           <li>Business planning</li>
             <li >Market research</li>
             <li>Interntaional business management</li>
@@ -63,13 +65,12 @@ const About = () => {
           </ul>
           </div>
         </Link>
-        <Link href="https://centria.fi/" target="_blank" className='lg:flex justify-evenly items-center group'>
-          <div className='mb-2 overflow-hidden'>
-          <Image src="/centria.png" alt="centria" width={768} height={512} className="object-contain h-28 lg:h-72 w-72 transition-transform duration-700 group-hover:scale-110 mt-4 ml-4"/>
+        <Link href="https://centria.fi/" target="_blank" className='lg:flex items-center group'>
+        <div className='lg:mb-2 flex flex-col justify-start items-center w-56 h-56 p-4 overflow-hidden rounded-tr-full bg-white transition-transform duration-700 group-hover:scale-110'>
+        <TypographyH1>Centria UAS</TypographyH1>
+        <TypographyH3 >Master's in Business Administration</TypographyH3>
           </div>
          <div className='text-heading3'>
-         <TypographyH3 >Master's in Business Administration</TypographyH3>
-          <TypographyH3>Centria UAS</TypographyH3>
           <TypographyH3>Major courses</TypographyH3>
           <ul className='text-primary mx-4'>
             <li>International business management</li>
@@ -81,13 +82,12 @@ const About = () => {
           </ul>
           </div>
         </Link>
-        <Link href="https://www.bc.fi/" target="_blank" className='lg:flex justify-evenly items-center group' style={{width:"50rem"}}>
-          <div className='mb-2 overflow-hidden'>
-          <Image src="/BCH.png" alt="bch" width={768} height={512} className="object-contain h-28 lg:h-72 w-72 transition-transform duration-700 group-hover:scale-110 mt-4 ml-4"/>
+        <Link href="https://www.bc.fi/" target="_blank" className='lg:flex items-center group' style={{width:"50rem"}}>
+        <div className='lg:mb-2 flex flex-col justify-start items-center w-64 h-64 p-4 overflow-hidden rounded-tr-full bg-white transition-transform duration-700 group-hover:scale-110'>
+        <TypographyH1>Business College Helsinki</TypographyH1>
+        <TypographyH3 >Full Stack Web Development</TypographyH3>
           </div>
          <div className='text-heading3'>
-         <TypographyH3 >Full Stack Web Development</TypographyH3>
-          <TypographyH3>Business College Helsinki</TypographyH3>
           <TypographyH3>Major courses</TypographyH3>
           <ul className='text-primary mx-4'>
           <li>HTML, CSS, and JavaScript</li>
@@ -104,15 +104,25 @@ const About = () => {
       <div className='mt-10 text-heading2'>
         <TypographyH2>What I do in free time?</TypographyH2>
       </div>
-      <div>
+      <div className='flex flex-col lg:grid grid-cols-3'>
         <div className='text-heading3'>
+          <div className='flex items-center space-x-2'>
           <TypographyH3>Travel</TypographyH3>
+          <span className='animate-round'><FaPlaneDeparture size={28}/></span>
+          </div>
+          
         </div>
         <div className='text-heading3'>
+          <div className='flex items-center space-x-2'>
           <TypographyH3>Study</TypographyH3>
+          <span className='animate-round'><IoBookSharp size={28}/></span>
+          </div>
         </div>
         <div className='text-heading3'>
+          <div className='flex items-center space-x-2'>
           <TypographyH3>Watch sports</TypographyH3>
+          <span className='animate-round'><PiTelevisionSimpleBold size={28}/></span>
+          </div>
         </div>
       </div>
     </div>

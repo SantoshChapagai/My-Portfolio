@@ -22,7 +22,7 @@ module.exports = {
 
       },
       animation:{
-          round: "round 20s linear infinite"
+          round: "round 5s linear infinite"
       },
       colors:{
         background: "var(--background)",
