@@ -51,7 +51,7 @@ const About = () => {
         <Link href="https://seamk.fi/" target="_blank" className='lg:flex items-center group'>
         <div className='lg:mb-2 flex flex-col justify-start items-center w-64 h-64 p-4 overflow-hidden rounded-br-full bg-white transition-transform duration-700 group-hover:scale-110'>
         <TypographyH1>Seinäjoki UAS</TypographyH1>
-        <TypographyH3>Bachelor's in International Business</TypographyH3>
+        <TypographyH3>Bachelor's in Business Administration</TypographyH3>
           </div>
          <div className='text-heading3 mx-4'>
           <TypographyH3>Major courses</TypographyH3>

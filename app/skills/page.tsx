@@ -36,7 +36,7 @@ const Skills = () => {
     <div className='min-h-screen px-20 lg:px-24 pt-24 text-primary'>
       <div>
         <div className='text-heading2 p-6'>
-      <TypographyH2>FrontEnd</TypographyH2>
+      <TypographyH2>Technology Stack</TypographyH2>
       </div>
       <div className='grid gap-x-24 lg:gap-x-4 gap-y-4 grid-cols-3 lg:grid-cols-8 md:grid-cols-6'>
         <div className='flex flex-col justify-center items-center'>
@@ -59,13 +59,6 @@ const Skills = () => {
         <TbBrandNextjs size={72} />
         <TypographyH3>NextJs</TypographyH3>
         </div>
-      </div>
-      </div>
-      <div>
-      <div className='text-heading2 p-6'>
-      <TypographyH2>Backend</TypographyH2>
-      </div>
-      <div className='grid gap-x-24 gap-y-4 lg:gap-x-4 grid-cols-3 lg:grid-cols-8 md:grid-cols-6'>
         <div className='flex flex-col justify-center items-center'>
         <FaPhp size={72} />
         <TypographyH3>PHP</TypographyH3>
@@ -78,13 +71,6 @@ const Skills = () => {
         <FaNodeJs size={72} />
         <TypographyH3>NodeJs</TypographyH3>
         </div>
-      </div>
-      </div>
-      <div>
-      <div className='text-heading2 p-6'>
-      <TypographyH2>Databases</TypographyH2>
-      </div>
-      <div className='grid gap-4 grid-cols-2 lg:grid-cols-8 md:grid-cols-6'>
         <div className='flex flex-col justify-center items-center'>
         <DiMongodb size={72} /> 
         <TypographyH3>MongoDB</TypographyH3>
