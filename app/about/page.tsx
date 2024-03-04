@@ -32,7 +32,7 @@ const About = () => {
         </div>
         <div className='lg:grid grid-cols-2 mt-2 lg:mt-12 space-y-6'>
         <Link href="https://tu.edu.np/" target="_blank" className='lg:flex items-center group'>
-          <div className='lg:mb-2 w-64 h-64 p-4 overflow-hidden rounded-br-full bg-white transition-transform duration-700 group-hover:scale-110'>
+          <div className='lg:mb-2 lg:mr-2 w-64 h-64 p-4 overflow-hidden rounded-br-full bg-white transition-transform duration-700 group-hover:scale-110'>
          <TypographyH1>Tribhuvan University</TypographyH1>
          <TypographyH3 >Bachelor's Degree in Business Studies</TypographyH3>
           </div>

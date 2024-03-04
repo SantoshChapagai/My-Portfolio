@@ -32,7 +32,7 @@ const Projects = () => {
           <Link href="https://github.com/SantoshChapagai/recipe-react" target='blank' className='flex justify-center hover:underline'>See more at: <FaGithub size={28}/></Link>
           </div>
           <div className='w-[500px]'>
-            <Video ref={videoRef} src="videos/receipe.mp4" autoPlay muted loop/>
+            <Video ref={videoRef} src="videos/recipe.mp4" autoPlay muted loop/>
           </div>
           </div>
         </div>
@@ -55,7 +55,7 @@ const Projects = () => {
           <p>Built using React/Bootstrap, this site utilizes Rest API, Firebase auth for signup/signin. It displays country list, favs, weather via OpenWeather API, maps via Google Maps API, and borders. Pixabay API provides images. Clickable borders navigate to respective countries.</p>
         </div>
         <div className='rounded-3xl w-96 overflow-hidden'>
-          <video src="./videos/recipe.mp4" autoPlay autoFocus></video>
+          <video src="./videos/recip.mp4" autoPlay autoFocus></video>
         </div>
         <div>
           <TypographyH3>ToDo</TypographyH3>
