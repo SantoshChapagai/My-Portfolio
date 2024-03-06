@@ -28,10 +28,10 @@ const Projects = () => {
           <div className='text-center'>
           <TypographyH3>Recipe App</TypographyH3>
           </div>
-          <p className='max-w-[500px] mx-8'>Built with React and CSS, this recipe app displays basic recipe information on cards, allowing users to navigate to individual recipes for more details. Users can also add their favorite recipes to a list.</p>
-          <Link href="https://github.com/SantoshChapagai/recipe-react" target='blank' className='flex justify-center hover:underline'>See more at: <FaGithub size={28}/></Link>
+          <p className='w-[300px] md:w-[500px] lg:w-[500px] mx-8'>Built with React and CSS, this recipe app displays basic recipe information on cards, allowing users to navigate to individual recipes for more details. Users can also add their favorite recipes to a list.</p>
+          <Link href="https://github.com/SantoshChapagai/recipe-react" target='blank' className='flex justify-center hover:underline p-2'>See more at: <FaGithub size={28}/></Link>
           </div>
-          <div className='w-[500px]'>
+          <div className='w-[300px] md:w-[500px] lg:w-[500px]'>
             <Video ref={videoRef} src="videos/recipe.mp4" autoPlay muted loop/>
           </div>
           </div>
@@ -42,10 +42,10 @@ const Projects = () => {
           <div className='text-center'>
           <TypographyH3>Shopping App</TypographyH3>
           </div>
-          <p className='max-w-[500px] mx-8'>Built with React and Bootstrap, this website integrates the Fakestore API to showcase product details via cards with images. Users can filter products by category, gender, and prices.</p>
-          <Link href="https://github.com/SantoshChapagai/shopping-app" target='blank' className='flex justify-center hover:underline'>See more at: <FaGithub size={28}/></Link>
+          <p className='w-[300px] md:w-[500px] lg:w-[500px] mx-8'>Built with React and Bootstrap, this website integrates the Fakestore API to showcase product details via cards with images. Users can filter products by category, gender, and prices.</p>
+          <Link href="https://github.com/SantoshChapagai/shopping-app" target='blank' className='flex justify-center hover:underline p-2'>See more at: <FaGithub size={28}/></Link>
           </div>
-          <div className='w-[500px]'>
+          <div className='w-[300px] md:w-[500px] lg:w-[500px]'>
             <Video ref={videoRef} src="videos/shopping.mp4" autoPlay muted loop/>
           </div>
           </div>
@@ -56,10 +56,10 @@ const Projects = () => {
           <div className='text-center'>
           <TypographyH3>Speed Game</TypographyH3>
           </div>
-          <p className='max-w-[500px] mx-8'>Built with React, this game features three levels: Easy, with 4 circles; Medium, with 5 circles; and Hard, with 6 circles. The cat appears randomly in one of the circles. If the player clicks the circle where the cat appears, 10 points are added to the score.</p>
-          <Link href="https://github.com/SantoshChapagai/speedgame-react" target='blank' className='flex justify-center hover:underline'>See more at: <FaGithub size={28}/></Link>
+          <p className='w-[300px] md:w-[500px] lg:w-[500px] mx-8'>Built with React, this game features three levels: Easy, with 4 circles; Medium, with 5 circles; and Hard, with 6 circles. The cat appears randomly in one of the circles. If the player clicks the circle where the cat appears, 10 points are added to the score.</p>
+          <Link href="https://github.com/SantoshChapagai/speedgame-react" target='blank' className='flex justify-center hover:underline p-2'>See more at: <FaGithub size={28}/></Link>
           </div>
-          <div className='w-[500px]'>
+          <div className='w-[300px] md:w-[500px] lg:w-[500px]'>
             <Video ref={videoRef} src="videos/speedgame.mp4" autoPlay muted loop/>
           </div>
           </div>
@@ -70,11 +70,11 @@ const Projects = () => {
           <div className='text-center'>
           <TypographyH3>Blog</TypographyH3>
           </div>
-          <p className='w-[300px] lg:w-[500px] mx-8'>
+          <p className='w-[300px] md:w-[500px] lg:w-[500px] mx-8'>
 Built with Node, Express, and EJS, this web application uses MongoDB for the database. Users can compose blogs, and all composed blogs are listed on the home page.</p>
           <Link href="https://github.com/SantoshChapagai/blog-mongodb" target='blank' className='flex justify-center hover:underline p-2'>See more at: <FaGithub size={28}/></Link>
           </div>
-          <div className='w-[320px] lg:w-[500px]'>
+          <div className='w-[300px] md:w-[500px] lg:w-[500px]'>
             <Video ref={videoRef} src="videos/blog.mp4" autoPlay muted loop/>
           </div>
           </div>
