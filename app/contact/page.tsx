@@ -40,7 +40,7 @@ const Contact = () => {
           <div className='flex flex-col mb-5 mt-3'>
             <label htmlFor="fname">First name*</label>
             <input
-              className='lg:w-96 md:w-84 h-12 rounded-xl p-4 mt-2'
+              className='lg:w-96 md:w-84 h-12 rounded-xl p-4 mt-2 text-black'
               type="text"
               id="fname"
               placeholder='Enter your first name'
@@ -52,7 +52,7 @@ const Contact = () => {
           <div className='flex flex-col mb-5'>
             <label htmlFor="lname">Last name*</label>
             <input
-              className='lg:w-96 md:w-84 h-12 rounded-xl p-4 mt-2'
+              className='lg:w-96 md:w-84 h-12 rounded-xl p-4 mt-2 text-black'
               type="text"
               id="lname"
               placeholder='Enter your last name'
@@ -64,7 +64,7 @@ const Contact = () => {
           <div className='flex flex-col mb-5'>
             <label htmlFor="subject">Subject*</label>
             <input
-              className='lg:w-96 md:w-84 h-12 rounded-xl p-4 mt-2'
+              className='lg:w-96 md:w-84 h-12 rounded-xl p-4 mt-2 text-black'
               type="text"
               id="subject"
               placeholder='Enter your subject name'
@@ -76,7 +76,7 @@ const Contact = () => {
           <div className='flex flex-col mb-5'>
             <label htmlFor="message">Message*</label>
             <textarea
-              className='lg:w-96 md:w-84 h-32 rounded-xl p-4 mt-2'
+              className='lg:w-96 md:w-84 h-32 rounded-xl p-4 mt-2 text-black'
               id="message"
               placeholder='Enter your message'
               value={formData.message}
