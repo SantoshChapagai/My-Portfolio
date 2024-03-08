@@ -1,5 +1,8 @@
 # Portfolio
 
+## Technology & Tools
+- NextJs and Tailwind
+
 ## Getting Started
 
 First, run the development server:
@@ -13,8 +16,6 @@ pnpm dev
 # or
 bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## About
 - Home page with the basic information and navigating link to the other pages.
