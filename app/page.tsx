@@ -24,9 +24,12 @@ export default function Home() {
       <TypographyH2>A Full-Stack Developer <span className='transition duration-1000 ease-in animate-pulse'>👋</span></TypographyH2>
       </div>
       <div className={`${overPass.className} max-w-[650px] text-primary mx-8`}>
-      <p className='mb-4'>I am a Master's in Business Administration graduate and a full stack developer. I am about to complete my full-stack program from Business College Helsinki. Currently, I am looking for an internship in the field of web development.</p>
+      <p className='mb-4'>I am a full-stack developer, encompassing proficiency in HTML, CSS, JavaScript, PHP, Symfony, MySQL, Figma, Trello, React, Tailwind CSS, Drupal, CI/CD, and Mocha. Additionally, I possess familiarity with Node, MongoDB, and Bootstrap, further enhancing my toolkit for comprehensive web development projects.</p>
       <hr className='h-4'/>
-      <p>I have learned about HTML, CSS, JavaScript, PHP, Symfony, MySql, Figma, Trello, React, Drupal, CI/CD, and Mocha during my studies in Business College Helsinki. I have also complete the course focusing on React, NodeJs, MongoDB, and Typescript from Udemy. Moreover, I solve the task from CodeWar, FreeCodeCamp, and W3School to develop my skills and knowledge. </p>
+      <p>Furthermore, I hold a Master's degree in Business Administration, specializing in international business, which provides me with a unique perspective and skill set.  </p>
+      </div>
+      <div className='mt-4 p-5 text-xl'>
+        <p className=''>Currently, I am working as a front-end web development intern at <Link href="https://www.unelmaplatforms.com/" target='_blank' className='underline'>Unelma platforms</Link></p>
       </div>
       <button className='mt-5 sm:text-center bg-primary mx-8 text-primary-foreground p-2 rounded-xl'>Download CV</button>
         </div>
