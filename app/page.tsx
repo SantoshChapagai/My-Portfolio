@@ -28,10 +28,10 @@ export default function Home() {
       <hr className='h-4'/>
       <p>Furthermore, I hold a Master's degree in Business Administration, specializing in international business, which provides me with a unique perspective and skill set.  </p>
       </div>
-      <div className='mt-4 p-5 text-xl'>
+      <div className='mt-4 p-5 text-xl text-primary'>
         <p className=''>Currently, I am working as a front-end web development intern at <Link href="https://www.unelmaplatforms.com/" target='_blank' className='underline'>Unelma platforms</Link></p>
       </div>
-      <button className='mt-5 sm:text-center bg-primary mx-8 text-primary-foreground p-2 rounded-xl'>Download CV</button>
+      <button className='mt-5 sm:text-center bg-primary mx-8 text-primary-foreground p-2 rounded-xl transition duration-1000 ease-out animate-pulse'>Download CV</button>
         </div>
         <div className='lg:bg-card  rounded-tl-full w-96 mt-10'>
          <Image src="/images/santosh.jpeg" alt="santosh" width={768} height={512} className="object-contain rounded-full w-80 mb-5 ml-2"/>
