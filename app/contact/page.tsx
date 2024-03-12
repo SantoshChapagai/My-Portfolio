@@ -62,12 +62,24 @@ const Contact = () => {
             />
           </div>
           <div className='flex flex-col mb-5'>
+            <label htmlFor="email">Email*</label>
+            <input
+              className='lg:w-96 md:w-84 h-12 rounded-xl p-4 mt-2 text-black'
+              type="email"
+              id="email"
+              placeholder='Enter your email address'
+              value={formData.lname}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className='flex flex-col mb-5'>
             <label htmlFor="subject">Subject*</label>
             <input
               className='lg:w-96 md:w-84 h-12 rounded-xl p-4 mt-2 text-black'
               type="text"
               id="subject"
-              placeholder='Enter your subject name'
+              placeholder='Enter your subject'
               value={formData.subject}
               onChange={handleChange}
               required
