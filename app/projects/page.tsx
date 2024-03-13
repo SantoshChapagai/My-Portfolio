@@ -79,14 +79,22 @@ Built with Node, Express, and EJS, this web application uses MongoDB for the dat
           </div>
           </div>
         </div>
-        <div>
-          <TypographyH3>Country App</TypographyH3>
-          <p>Built using React/Bootstrap, this site utilizes Rest API, Firebase auth for signup/signin. It displays country list, favs, weather via OpenWeather API, maps via Google Maps API, and borders. Pixabay API provides images. Clickable borders navigate to respective countries.</p>
+        <div className='lg:max-w-[1000px] mt-4'>
+          <div className='flex flex-col lg:flex-row justify-around items-center lg:mt-5'>
+          <div className='space-y-4'>
+          <div className='text-center'>
+          <TypographyH3>Country</TypographyH3>
+          </div>
+          <p className='w-[300px] md:w-[500px] lg:w-[500px] mx-8'>
+          Built using React/Bootstrap, this site utilizes Rest API, Firebase auth for signup/signin. It displays country list, favs, weather via OpenWeather API, maps via Google Maps API, and borders. Pixabay API provides images. Clickable borders navigate to respective countries.</p>
+          <Link href="https://github.com/SantoshChapagai/country-project" target='blank' className='flex justify-center hover:underline p-2'>See more at: <FaGithub size={28}/></Link>
+          </div>
+          <div className='w-[300px] md:w-[500px] lg:w-[500px]'>
+            <Video ref={videoRef} src="videos/country.mp4" autoPlay muted loop/>
+          </div>
+          </div>
         </div>
-        <div className='rounded-3xl w-96 overflow-hidden'>
-          <video src="./videos/recip.mp4" autoPlay autoFocus></video>
-        </div>
-        <div className='flex justify-center items-center py-4'>
+        <div className='flex justify-center items-center py-4 mt-12'>
           <TypographyH1>See more of my work in</TypographyH1>
          <Link href="https://github.com/SantoshChapagai" target='blank'><FaGithub size={36}/></Link> 
         </div>
