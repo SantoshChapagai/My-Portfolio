@@ -103,12 +103,14 @@ const About = () => {
         <TypographyH2>What I do in free time?</TypographyH2>
       </div>
       <div className='flex flex-col lg:grid grid-cols-3'>
-        <div className='text-heading3'>
-          <div className='flex items-center space-x-2'>
+        <div className='text-heading3 flex flex-col items-center'>
+          <div className='flex space-x-2 mb-4'>
           <TypographyH3>Travel</TypographyH3>
           <span className='animate-round'><FaPlaneDeparture size={28}/></span>
           </div>
-          
+          <div>
+            <Image src={"/images/travel.jpeg"} alt="travel" width={768} height={512}  className='w-72 h-48 rounded-xl'/>
+          </div>
         </div>
         <div className='text-heading3'>
           <div className='flex items-center space-x-2'>
