@@ -125,6 +125,12 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div>
+        <TypographyH2>What else...</TypographyH2>
+      </div>
+      <TypographyH3>Practice kata in Codewars</TypographyH3>
+      <TypographyH3>Practice from FreeCodeCamp and W3Schools</TypographyH3>
+      <TypographyH3>Practice in collaboration with startups</TypographyH3>
     </div>
   )
 }
