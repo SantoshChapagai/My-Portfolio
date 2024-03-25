@@ -23,7 +23,7 @@ const Footer = () => {
         <Link href="https://github.com/SantoshChapagai" target="_blank">
         <FaGithub size={32} />
         </Link>
-        <Link href="https://www.instagram.com/san____tosh?igsh=NmdwNDZ4NnE5MXB4" target="_blank">
+        <Link href="https://www.instagram.com/santosh__chapagai?igsh=NmdwNDZ4NnE5MXB4" target="_blank">
         <FaInstagram size={32} />
         </Link>
         <Link href="mailto:santoshchapagai100@gmail.com">
