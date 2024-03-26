@@ -1,6 +1,6 @@
 "use client"
 import React, {useState, useEffect} from 'react'
-import { TfiArrowTopRight } from "react-icons/tfi";
+import { FaArrowUp } from "react-icons/fa";
 
 const TopButton = () => {
 
@@ -40,9 +40,9 @@ const TopButton = () => {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="bg-primary text-primary-foreground rounded-full p-3 focus:outline-none -rotate-45"
+          className="bg-primary text-primary-foreground rounded-full p-3 focus:outline-none"
         >
-          <TfiArrowTopRight size={24} />
+          <FaArrowUp size={24} />
         </button>
       )}
     </div>
