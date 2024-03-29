@@ -106,7 +106,7 @@ const About = () => {
         <div className='text-heading3 flex flex-col items-center'>
           <div className='flex space-x-2 mb-4'>
           <TypographyH3>Study</TypographyH3>
-          <span className='animate-round'><FaPlaneDeparture size={28}/></span>
+          <span className='animate-round'><IoBookSharp size={28}/></span>
           </div>
           <div>
             <Image src={"/images/study.png"} alt="travel" width={768} height={512}  className='w-72 h-48 rounded-xl'/>
@@ -124,19 +124,25 @@ const About = () => {
         <div className='text-heading3 flex flex-col items-center'>
           <div className='flex space-x-2 mb-4'>
           <TypographyH3>Watch sports</TypographyH3>
-          <span className='animate-round'><FaPlaneDeparture size={28}/></span>
+          <span className='animate-round'><PiTelevisionSimpleBold size={28}/></span>
           </div>
           <div>
             <Image src={"/images/sport.png"} alt="travel" width={768} height={512}  className='w-72 h-48 rounded-xl'/>
           </div>
         </div>
       </div>
-      <div>
+      <div className='text-heading2'>
         <TypographyH2>What else...</TypographyH2>
       </div>
+      <div className='text-heading3'>
       <TypographyH3>Practice kata in Codewars</TypographyH3>
+      </div>
+      <div className='text-heading3'>
       <TypographyH3>Practice from FreeCodeCamp and W3Schools</TypographyH3>
+      </div>
+      <div className='text-heading3'>
       <TypographyH3>Practice in collaboration with startups</TypographyH3>
+      </div>
     </div>
   )
 }
