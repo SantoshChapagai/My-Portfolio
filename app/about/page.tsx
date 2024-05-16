@@ -131,7 +131,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='text-heading2'>
+      <div className='text-heading2 mt-16'>
         <TypographyH2>What else...</TypographyH2>
       </div>
       <div className='text-heading3'>
