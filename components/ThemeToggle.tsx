@@ -2,7 +2,6 @@
 import React, {useState, useEffect} from 'react';
 import {FaMoon} from "react-icons/fa";
 import {BsSunFill} from "react-icons/bs";
-import Moon from "/moon"
 
 
 const ThemeToggle = () => {
