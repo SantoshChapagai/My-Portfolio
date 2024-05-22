@@ -33,7 +33,7 @@ import { FaTrello } from "react-icons/fa6";
 
 const Skills = () => {
   return (
-    <div className='min-h-screen px-20 lg:px-24 pt-24 text-primary'>
+    <div className='min-h-screen px-20 lg:px-24 pt-16 md:pt-24 text-primary'>
       <div>
         <div className='text-heading2 p-6'>
       <TypographyH2>Technology Stack</TypographyH2>

@@ -50,7 +50,7 @@ const Projects = () => {
           </div>
           </div>
         </div>
-        <div className='lg:max-w-[1000px]'>
+        <div className='lg:max-w-[1000px] mt-4'>
           <div className='flex flex-col lg:flex-row justify-around items-center lg:mt-5'>
           <div className='space-y-4'>
           <div className='text-center'>
@@ -94,8 +94,8 @@ Built with Node, Express, and EJS, this web application uses MongoDB for the dat
           </div>
           </div>
         </div>
-        <div className='flex justify-center items-center py-4 mt-12'>
-          <TypographyH1>See more of my work in</TypographyH1>
+        <div className='flex flex-col md:flex-row justify-center items-center py-4 mt-12'>
+          <TypographyH1>See more of my work at</TypographyH1>
          <Link href="https://github.com/SantoshChapagai" target='blank'><FaGithub size={36}/></Link> 
         </div>
       </div>
