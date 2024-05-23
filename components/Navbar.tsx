@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
 import { IoMenuOutline } from 'react-icons/io5';
@@ -14,7 +14,7 @@ const lemon = Lemon({
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
+ 
 
   const toggleMobileMenu = () => {
     setShowMobileMenu(!showMobileMenu);
@@ -32,18 +32,6 @@ const Navbar = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const handler = (event: MouseEvent) => {
-      if (!menuRef.current?.contains(event.target as Node)) {
-        setShowMobileMenu(false);
-      }
-    };
-    document.addEventListener("mousedown", handler);
-
-    return () => {
-      document.removeEventListener("mousedown", handler);
-    };
-  }, []);
 
   return (
     <div className={`${lemon.className} w-full mx-auto flex justify-between items-center lg:px-12 h-24 py-4 bg-navbar text-navbar-foreground fixed z-50`} >
@@ -61,7 +49,7 @@ const Navbar = () => {
           </button>
         )}
 
-        <div className={`${showMobileMenu ? 'block' : 'hidden'} absolute top-24 left-0 right-0 bg-white dark:bg-gray-800`} ref={menuRef}>
+        <div className={`${showMobileMenu ? 'block' : 'hidden'} absolute top-24 left-0 right-0 bg-white dark:bg-gray-800`}>
           <div className='flex flex-col items-center'>
             <Link href='/'>Home</Link>
             <Link href='/about' passHref={true} legacyBehavior>
