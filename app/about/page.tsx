@@ -6,7 +6,6 @@ import TypographyH3 from '@/components/typography/h3';
 import { IoBookSharp } from "react-icons/io5";
 import { FaPlaneDeparture } from "react-icons/fa";
 import { PiTelevisionSimpleBold } from "react-icons/pi";
-import TypographyH1 from '@/components/typography/h1';
 
 
 const About = () => {
@@ -28,7 +27,7 @@ const About = () => {
       </div>
       <div className='flex flex-col lg:grid grid-cols-3'>
         <div className='text-heading3 flex flex-col items-center'>
-          <div className='flex space-x-2 mb-4'>
+          <div className='flex space-x-2 my-4'>
           <TypographyH3>Study</TypographyH3>
           <span className='animate-round'><IoBookSharp size={28}/></span>
           </div>
@@ -37,7 +36,7 @@ const About = () => {
           </div>
         </div>
         <div className='text-heading3 flex flex-col items-center'>
-          <div className='flex space-x-2 mb-4'>
+          <div className='flex space-x-2 my-4'>
           <TypographyH3>Travel</TypographyH3>
           <span className='animate-round'><FaPlaneDeparture size={28}/></span>
           </div>
@@ -46,7 +45,7 @@ const About = () => {
           </div>
         </div>
         <div className='text-heading3 flex flex-col items-center'>
-          <div className='flex space-x-2 mb-4'>
+          <div className='flex space-x-2 my-4'>
           <TypographyH3>Watch sports</TypographyH3>
           <span className='animate-round'><PiTelevisionSimpleBold size={28}/></span>
           </div>

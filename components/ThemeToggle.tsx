@@ -22,7 +22,7 @@ const ThemeToggle = () => {
    }
   }, [darkMode])
   return (
-    <div className='relative w-16 h-8 flex items-center cursor-pointer rounded-full p-1' onClick={() => setDarkMode(!darkMode)}>
+    <div className='relative h-8 flex items-center cursor-pointer rounded-full p-1 mr-2' onClick={() => setDarkMode(!darkMode)}>
     {darkMode ? (
       <BsSunFill className="text-white" size={18} />
     ) : (

@@ -34,7 +34,7 @@ export default function Home() {
       <button className='mt-5 sm:text-center bg-primary mx-8 text-primary-foreground p-2 rounded-xl transition duration-1000 ease-out animate-pulse'>Download CV</button>
         </div>
         <div className='lg:bg-card  rounded-tl-full w-96 mt-10'>
-         <Image src="/images/santosh.jpeg" alt="santosh" width={768} height={512} className="object-contain rounded-full w-80 mb-5 ml-2"/>
+         <Image src="/images/santosh.jpeg" alt="santosh" width={768} height={512} className="object-contain rounded-full w-80 mb-5 ml-8 md:ml-2"/>
          </div>
          </div>
      

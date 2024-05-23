@@ -34,7 +34,7 @@ const TopButton = () => {
   return (
     <div
       className={`${
-        showButton ? 'fixed bottom-8 right-10 transition-transform duration-300' : '-right-full'
+        showButton ? 'fixed bottom-8 right-2 md:right-10 transition-transform duration-300' : '-right-full'
       }`}
     >
       {showButton && (
