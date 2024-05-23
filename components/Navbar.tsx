@@ -1,84 +1,117 @@
 "use client"
-import React, { useState, useEffect } from 'react';
+import { useEffect, useRef, useState } from "react";
 import Link from 'next/link';
+import { IoMenuOutline } from "react-icons/io5";
 import ThemeToggle from './ThemeToggle';
-import { IoMenuOutline } from 'react-icons/io5';
 import {Lemon} from "next/font/google";
 import Image from 'next/image';
 
 const lemon = Lemon({
   weight: "400",
   subsets: ['latin'],
-
 })
+
 const Navbar = () => {
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
- 
-
-  const toggleMobileMenu = () => {
-    setShowMobileMenu(!showMobileMenu);
-  };
-
-  const handleResize = () => {
-    setIsSmallScreen(window.innerWidth < 556);
-  };
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    handleResize();
-    window.addEventListener('resize', handleResize);
+    const handler = (event: MouseEvent) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
+        setIsMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+
     return () => {
-      window.removeEventListener('resize', handleResize);
+      document.removeEventListener("mousedown", handler);
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+  };
 
   return (
-    <div className={`${lemon.className} w-full mx-auto flex justify-between items-center lg:px-12 h-24 py-4 bg-navbar text-navbar-foreground fixed z-50`} >
-      <div className='ml-2'>
-        <Link href='/' className='flex items-center space-x-4'>
-          <Image src='/logo.png' height={300} width={300} className='h-20 w-20' alt="logo"/>
-          <span className='font-mono text-lg'>Santosh</span>
-        </Link>
-      </div>
-
-      <div className='flex items-center space-x-4'>
-        {isSmallScreen && (
-          <button onClick={toggleMobileMenu}>
-            <IoMenuOutline size={32} />
-          </button>
-        )}
-
-        <div className={`${showMobileMenu ? 'block' : 'hidden'} absolute top-24 left-0 right-0 bg-white dark:bg-gray-800`}>
-          <div className='flex flex-col items-center'>
-            <Link href='/'>Home</Link>
-            <Link href='/about' passHref={true} legacyBehavior>
-              About
+    <nav className={`${lemon.className} w-full fixed top-0 z-50 bg-navbar text-navbar-foreground`}>
+      <div className="h-fit">
+        <div className="flex justify-between items-center px-2">
+          <div className="flex-shrink-0 flex items-center py-2 space-x-2">
+            <Link href="/" className="flex justify-center items-center space-x-2">
+            <Image className=" w-auto h-16" src="/logo.png" alt="Logo" height={300} width={300}/>
+            <span className="text-sm">Santosh</span>
             </Link>
-            <Link href='/skills'>Skills</Link>
-            <Link href='/projects'>Projects</Link>
-            <Link href='/contact'>Contact</Link>
           </div>
+          <div className="hidden sm:flex space-x-4 font-bold mr-8">
+              <>
+                <Link href="/">
+                  Home
+                </Link>
+                <Link href="/about">
+                  About
+                </Link>
+                <Link href="skills">
+                  Skills
+                </Link>
+                <Link href="/projects">
+                  Projects
+                </Link>
+
+                <Link href="/contact">
+                  Contact
+                </Link>
+              </>
+              <ThemeToggle />
+          </div>
+          <div className="mr-2 flex items-center sm:hidden">
+            <button
+            ref={buttonRef}
+              onClick={toggleMenu}
+              className="flex flex-end items-center justify-center p-2 rounded-md transition duration-150 ease-in-out"
+            >
+              <IoMenuOutline size={32} />
+            </button>
+            <ThemeToggle />
+          </div>
+          
         </div>
-
-        {!isSmallScreen && !showMobileMenu && (
-          <div className='flex space-x-4'>
-            <Link href='/'>Home</Link>
-            <Link href='/about' passHref={true} legacyBehavior>
-              About
-            </Link>
-            <Link href='/skills'>Skills</Link>
-            <Link href='/projects'>Projects</Link>
-            <Link href='/contact'>Contact</Link>
-          </div>
-        )}
-         <div>
-        <ThemeToggle />
       </div>
-      </div>
+      <div
+        className={`${isMenuOpen ? "block" : "hidden"} sm:hidden`}
+        id="mobile-menu"
+        ref={menuRef}
+      >
+        <hr />
+        <div className="flex flex-col p-3 space-y-1 font-bold">
+        <>
+                <Link href="/">
+                  Home
+                </Link>
+                <Link href="/about">
+                  About
+                </Link>
+                <Link href="skills">
+                  Skills
+                </Link>
+                <Link href="/projects">
+                  Projects
+                </Link>
 
-     
-    </div>
+                <Link href="/contact">
+                  Contact
+                </Link>
+              </>
+        </div>
+      </div>
+    </nav>
+   
+    
   );
 };
 
