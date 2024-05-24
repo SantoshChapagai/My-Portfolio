@@ -7,7 +7,6 @@ import { IoBookSharp } from "react-icons/io5";
 import { FaPlaneDeparture } from "react-icons/fa";
 import { PiTelevisionSimpleBold } from "react-icons/pi";
 
-
 const About = () => {
   return (
     <div className='min-h-screen pt-24 lg:p-24 bg-blender'>
