@@ -1,15 +1,16 @@
 "use client"
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
-  const [submit, setSubmit] = useState(false);
   const [formData, setFormData] = useState({
-    fname: '',
-    lname: '',
-    subject: '',
+    name: '',
+    email: '',
     message: ''
   });
-
+ 
+ 
   const handleChange = (e: any) => {
     const { id, value } = e.target;
     setFormData(prevState => ({
@@ -18,45 +19,47 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    setSubmit(true);
-    setTimeout(() => {
-      setSubmit(false);
-      setFormData({
-        fname: '',
-        lname: '',
-        subject: '',
-        message: ''
-      });
-    }, 3000);
-  };
+const handleSendEmail = (e:any)=>{
+  e.preventDefault();
+
+  const params = {
+    from_name: formData.name,
+    from_email: formData.email,
+    to_name: "santosh",
+    message: formData.message
+  }
+
+  const serviceId= "service_afabo32";
+  const templateId="template_hbo443r";
+  const publicKey = "HxSlQ3yJ7igyb1-WO"
+
+  emailjs.send(serviceId, templateId, params, publicKey)
+  .then(()=>{
+    alert("Thanks for reaching out, will get back to you very soon")
+    setFormData({
+      name:"",
+      email:"",
+      message:""
+    })
+  })
+  .catch(()=>{
+   alert("There is problem sending your email, try sending email at santoshchapagai100@gmail.com")
+  })
+}
 
   return (
     <div className='min-h-screen pt-32 overflow-hidden flex justify-center items-center text-primary'>
       <div>
         <p>All the fields marked with * are required.</p>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSendEmail}>
           <div className='flex flex-col mb-5 mt-3'>
-            <label htmlFor="fname">First name*</label>
+            <label htmlFor="name">Full Name*</label>
             <input
               className='lg:w-96 md:w-84 h-12 rounded-xl p-4 mt-2 text-black'
               type="text"
-              id="fname"
-              placeholder='Enter your first name'
-              value={formData.fname}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className='flex flex-col mb-5'>
-            <label htmlFor="lname">Last name*</label>
-            <input
-              className='lg:w-96 md:w-84 h-12 rounded-xl p-4 mt-2 text-black'
-              type="text"
-              id="lname"
-              placeholder='Enter your last name'
-              value={formData.lname}
+              id="name"
+              placeholder='Enter your name'
+              value={formData.name}
               onChange={handleChange}
               required
             />
@@ -65,22 +68,10 @@ const Contact = () => {
             <label htmlFor="email">Email*</label>
             <input
               className='lg:w-96 md:w-84 h-12 rounded-xl p-4 mt-2 text-black'
-              type="email"
-              id="email"
-              placeholder='Enter your email address'
-              value={formData.lname}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className='flex flex-col mb-5'>
-            <label htmlFor="subject">Subject*</label>
-            <input
-              className='lg:w-96 md:w-84 h-12 rounded-xl p-4 mt-2 text-black'
               type="text"
-              id="subject"
-              placeholder='Enter your subject'
-              value={formData.subject}
+              id="email"
+              placeholder='Enter your emmail address'
+              value={formData.email}
               onChange={handleChange}
               required
             />
@@ -100,7 +91,6 @@ const Contact = () => {
             <button type='submit'>Send</button>
           </div>
         </form>
-        {submit && (<p>Message Sent successfully!</p>)}
       </div>
     </div>
   );
