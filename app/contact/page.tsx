@@ -29,9 +29,13 @@ const handleSendEmail = (e:any)=>{
     message: formData.message
   }
 
-  const serviceId= "service_afabo32";
-  const templateId="template_hbo443r";
-  const publicKey = "HxSlQ3yJ7igyb1-WO"
+  const serviceId= process.env.NEXT_PUBLIC_SERVICEID;
+  const templateId= process.env.NEXT_PUBLIC_TEMPLATEID
+  const publicKey = process.env.NEXT_PUBLIC_PUBLICKEY
+
+  if (!serviceId || !templateId || !publicKey) {
+    return;
+  }
 
   emailjs.send(serviceId, templateId, params, publicKey)
   .then(()=>{
