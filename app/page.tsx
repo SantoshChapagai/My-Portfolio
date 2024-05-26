@@ -1,6 +1,5 @@
 import TypographyH2 from '@/components/typography/h2'
 import TypographyH1 from '@/components/typography/h2'
-import TypographyH3 from '@/components/typography/h3'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ImProfile } from "react-icons/im";
@@ -31,7 +30,11 @@ export default function Home() {
       <div className='mt-4 p-5 text-xl text-primary'>
         <p className=''>Currently, I am working as a front-end web development intern at <Link href="https://www.unelmaplatforms.com/" target='_blank' className='underline'>Unelma platforms</Link></p>
       </div>
-      <button className='mt-5 sm:text-center bg-primary mx-8 text-primary-foreground p-2 rounded-xl transition duration-1000 ease-out animate-pulse'>Download CV</button>
+      <button className='mt-5 sm:text-center bg-primary mx-8 text-primary-foreground p-2 rounded-xl transition duration-1000 ease-out animate-pulse'>
+       <Link href="/images/santosh.pdf" download="resume" target='_blank'>
+        Download CV
+       </Link>
+      </button>
         </div>
         <div className='lg:bg-card  rounded-tl-full w-96 mt-10'>
          <Image src="/images/santosh.jpeg" alt="santosh" width={768} height={512} className="object-contain rounded-full w-80 mb-5 ml-8 md:ml-2"/>
