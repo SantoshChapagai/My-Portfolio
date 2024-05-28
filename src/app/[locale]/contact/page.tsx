@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { useTranslations } from 'next-intl';
 
 
 const Contact = () => {
@@ -9,7 +10,7 @@ const Contact = () => {
     email: '',
     message: ''
   });
- 
+  const t = useTranslations("contact");
  
   const handleChange = (e: any) => {
     const { id, value } = e.target;
@@ -54,45 +55,45 @@ const handleSendEmail = (e:any)=>{
   return (
     <div className='min-h-screen pt-32 overflow-hidden flex justify-center items-center text-primary'>
       <div>
-        <p>All the fields marked with * are required.</p>
+        <p>{t("info")}</p>
         <form onSubmit={handleSendEmail}>
           <div className='flex flex-col mb-5 mt-3'>
-            <label htmlFor="name">Full Name*</label>
+            <label htmlFor="name">{t("name")}</label>
             <input
               className='lg:w-96 md:w-84 h-12 rounded-xl p-4 mt-2 text-black'
               type="text"
               id="name"
-              placeholder='Enter your name'
+              placeholder= {t("name_placeholder")}
               value={formData.name}
               onChange={handleChange}
               required
             />
           </div>
           <div className='flex flex-col mb-5'>
-            <label htmlFor="email">Email*</label>
+            <label htmlFor="email">{t("email")}</label>
             <input
               className='lg:w-96 md:w-84 h-12 rounded-xl p-4 mt-2 text-black'
               type="text"
               id="email"
-              placeholder='Enter your emmail address'
+              placeholder={t("email_placeholder")}
               value={formData.email}
               onChange={handleChange}
               required
             />
           </div>
           <div className='flex flex-col mb-5'>
-            <label htmlFor="message">Message*</label>
+            <label htmlFor="message">{t("message")}</label>
             <textarea
               className='lg:w-96 md:w-84 h-32 rounded-xl p-4 mt-2 text-black'
               id="message"
-              placeholder='Enter your message'
+              placeholder= {t("message_placeholder")}
               value={formData.message}
               onChange={handleChange}
               required
             />
           </div>
           <div className='flex justify-center items-center w-24 h-8 rounded-xl bg-primary text-primary-foreground'>
-            <button type='submit'>Send</button>
+            <button type='submit'>{t("button")}</button>
           </div>
         </form>
       </div>
