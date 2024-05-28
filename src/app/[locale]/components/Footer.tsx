@@ -6,11 +6,13 @@ import {FaLinkedin} from "react-icons/fa"
 import {FaGithub} from "react-icons/fa"
 import {FaInstagram} from "react-icons/fa"
 import { MdMailOutline } from "react-icons/md";
+import { useTranslations } from 'next-intl';
 
 
 const Footer = () => {
   const date= new Date();
   const year = date.getFullYear();
+  const t = useTranslations('footer');
   return (
     <div className='flex lg:flex-row-reverse justify-center md:justify-between items-center flex-wrap border-t border-gray-200 px-6 py-10 bg-footer text-footer-foreground'>
       <div className='flex space-x-4 mr-8  lg:mr-16 mb-2'>
@@ -31,7 +33,7 @@ const Footer = () => {
         </Link>
       </div>
       <div>
-      <p>&copy;{year} Santosh. All rights reserved.</p>
+      <p>&copy;{year} Santosh. <span>{t('footer')}</span></p>
       </div>
     </div>
   )

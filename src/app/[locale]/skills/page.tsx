@@ -1,4 +1,4 @@
-import TypographyH2 from '@/components/typography/h2'
+import TypographyH2 from '@/src/app/[locale]/components/typography/h2'
 import React from 'react'
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
@@ -15,7 +15,7 @@ import { FaBootstrap } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { SiMocha } from "react-icons/si";
 import { SiSonarcloud } from "react-icons/si";
-import TypographyH3 from '@/components/typography/h3';
+import TypographyH3 from '@/src/app/[locale]/components/typography/h3';
 import { SiMicrosoftexcel } from "react-icons/si";
 import { FaFilePowerpoint } from "react-icons/fa";
 import { GrPlan } from "react-icons/gr";
@@ -28,15 +28,17 @@ import { PiFigmaLogoBold } from "react-icons/pi";
 import { FaDocker } from "react-icons/fa";
 import { FaGithubAlt } from "react-icons/fa6";
 import { FaTrello } from "react-icons/fa6";
+import { useTranslations } from 'next-intl';
 
 
 
 const Skills = () => {
+  const t = useTranslations("skills");
   return (
     <div className='min-h-screen px-16 md:px-20 lg:px-24 pt-16 md:pt-24 text-primary'>
       <div>
         <div className='text-heading2 pt-6 whitespace-nowrap'>
-      <TypographyH2>Technology Stack</TypographyH2>
+      <TypographyH2>{t("stack")}</TypographyH2>
       </div>
       <div className='grid gap-x-24 lg:gap-x-4 gap-y-4 grid-cols-3 lg:grid-cols-8 md:grid-cols-6'>
         <div className='flex flex-col justify-center items-center'>
@@ -83,7 +85,7 @@ const Skills = () => {
       </div>
       <div>
       <div className='text-heading2 p-6'>
-        <TypographyH2> Tools </TypographyH2>
+        <TypographyH2> {t("tools")} </TypographyH2>
         </div>
         <div className='grid gap-x-28 gap-y-5 lg:gap-x-4 grid-cols-3 lg:grid-cols-8 md:grid-cols-6'>
           <div className='flex flex-col justify-center items-center'>
@@ -126,7 +128,7 @@ const Skills = () => {
       </div>
       <div>
       <div className='text-heading2 p-6'>
-        <TypographyH2>Others</TypographyH2>
+        <TypographyH2>{t("other")}</TypographyH2>
         </div>
         <div className='grid gap-x-32 lg:gap-x-4 grid-cols-2 lg:grid-cols-8 md:grid-cols-6'>
           <div className='flex flex-col justify-center items-center'>

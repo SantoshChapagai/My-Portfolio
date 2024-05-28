@@ -1,0 +1,67 @@
+{
+    "navbar":{
+        "home": "home",
+        "about": "about",
+        "skills": "skills",
+        "projects": "projects",
+        "contact": "contact"
+    },
+    "homepage": {
+        "h1": "Hello! I'm Santosh Chapagai",
+        "h2": "A Full-Stack Developer",
+        "study": "I am a full-stack developer, encompassing proficiency in HTML, CSS, JavaScript, PHP, Symfony, MySQL, Figma, Trello, React, Tailwind CSS, Drupal, CI/CD, and Mocha. Additionally, I possess familiarity with Node, MongoDB, and Bootstrap, further enhancing my toolkit for comprehensive web development projects.",
+        "business_study": "Furthermore, I hold a Master's degree in Business Administration, specializing in international business, which provides me with a unique perspective and skill set.",
+        "current_job_description": "Currently, I am working as a front-end web development intern at",
+        "current_job_place": "Unelma Platforms",
+        "cv": "Download CV",
+        "about_link": "About",
+        "about_text": "I have a short introduction that details my journey to becoming a software developer along with my hobbies.",
+        "skills_link": "Skills",
+        "skills_text": "Here's a list of skills I've acquired during my studies, covering both software development and business studies.",
+        "projects_link": "Projects",
+        "projects_text": "During my time at Business College Helsinki, I completed several impressive projects. Few of them are listed here.",
+        "contact_link": "contact",
+        "contact_text": "Let's get connected, share experiences and help each other to develop the skills."
+    },
+    "about": {
+        "intro": "I am a ",
+        "intro_study": "Full-Stack Web Developer",
+        "school_description": "graduated from Business College Helsinki, where I've had the privilege of immersing myself in cutting-edge technologies such as React and Drupal. During my time at Business College Helsinki, I have become familiar with HTML, CSS, JavaScript, PHP, Symfony, MySQL, Figma, Trello, React, Tailwind CSS, Drupal, CI/CD, and Mocha. In the meantime, I have also completed the full-stack web development course from Udemy, focusing on React, Node.js, Express, and MongoDB. Prior to joining Business College, I had studied HTML, CSS, and JavaScript from platforms like FreeCodeCamp and W3Schools. Moreover, I also enjoy solving problems on platforms like Codewars, mainly related to JavaScript.",
+        "study_background": "Additionally, my study background is related to business, and I am a graduate of",
+        "previous_course": "Master's of Business Administration",
+        "study_details": " from Centria University of Applied Sciences. During my studies at Centria, I learned different aspects of business such as strategic management, change management, research, human resource management, accounting, and international business management.",
+        "other": "When I'm not studying, I love exploring nature. I also play sports, spend time gaming on my PS4, and hang out with my family and friends.",
+        "h2": "What I do in free time?",
+        "study": "Study",
+        "travel": "Travel",
+        "watch": "Watch sports"
+    },
+    "skills": {
+        "stack": "Technology Stack",
+        "tools": "Tools",
+        "other": "Others"
+    },
+    "projects": {
+        "intro": "I have developed some cool projects as a part of my study during the time at Business College Helsinki. When I started learning coding I developed focused on the front-end and as the study progress and get to know about backend I have developed some full stack application. I have also developed some site using publicly availiable APIs. Moreover, I have also developed some project as a part of my study in Udemy.",
+        "recipe_intro": "Built with React and CSS, this recipe app displays basic recipe information on cards, allowing users to navigate to individual recipes for more details. Users can also add their favorite recipes to a list.",
+        "see": "See more at:",
+        "shopping_intro": "Built with React and Bootstrap, this website integrates the Fakestore API to showcase product details via cards with images. Users can filter products by category, gender, and prices.",
+        "speed_game_intro": "Built with React, this game features three levels: Easy, with 4 circles; Medium, with 5 circles; and Hard, with 6 circles. The cat appears randomly in one of the circles. If the player clicks the circle where the cat appears, 10 points are added to the score.",
+        "blog_intro": "Built with Node, Express, and EJS, this web application uses MongoDB for the database. Users can compose blogs, and all composed blogs are listed on the home page.",
+        "country_intro": "Built using React/Bootstrap, this site utilizes Rest API, Firebase auth for signup/signin. It displays country list, favs, weather via OpenWeather API, maps via Google Maps API, and borders. Pixabay API provides images. Clickable borders navigate to respective countries.",
+        "h1": "See more of my work at"
+    },
+    "contact": {
+        "info": "All the fields marked with * are required.",
+        "name": "Full Name*",
+        "name_placeholder": "Enter your name",
+        "email": "Email*",
+        "email_placeholder": "Enter your email address",
+        "message": "Message*",
+        "message_placeholder": "Enter your message",
+        "button": "Send"
+    },
+    "footer": {
+     "footer": "All rights reserved."
+    }
+}
