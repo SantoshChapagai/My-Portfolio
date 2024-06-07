@@ -29,8 +29,8 @@ export default function Home() {
       <hr className='h-4'/>
       <p>{t('business_study')}</p>
       </div>
-      <div className='mt-4 p-5 text-xl text-primary'>
-        <p className=''>{t('current_job_description')}<Link href="https://www.unelmaplatforms.com/" target='_blank' className='underline'> {t('current_job_place')}</Link></p>
+      <div className='mt-4 p-5 text-primary'>
+        <p className=''>{t('intern_description')}<Link href="https://www.unelmaplatforms.com/" target='_blank' className='underline'> {t('intern_place')}</Link> <span>{t("intern_role")}</span></p>
       </div>
       <button className='mt-5 sm:text-center bg-primary mx-8 text-primary-foreground p-2 rounded-xl transition duration-1000 ease-out animate-pulse'>
        <Link href="/images/santosh.pdf" download="resume" target='_blank'>

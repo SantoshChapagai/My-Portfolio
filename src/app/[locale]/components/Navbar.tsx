@@ -47,12 +47,11 @@ const Navbar: React.FC<{ locale: string }> = ({ locale }) => {
   const getLocalizedPath = (path: string) => `/${locale}${path}`;
 
   return (
-    <nav className={`${lemon.className} w-full fixed top-0 z-50 bg-navbar text-navbar-foreground`}>
+    <nav className={`${lemon.className} w-full fixed top-0 z-50 bg-navbar text-navbar-foreground p-6`}>
       <div className="h-fit">
         <div className="flex justify-between items-center px-2">
           <div className="flex-shrink-0 flex items-center py-2 space-x-2">
             <Link href={getLocalizedPath("/")} className="flex justify-center items-center space-x-2">
-              <Image className="w-auto h-16" src="/logo.png" alt="Logo" height={300} width={300} />
               <span className="text-sm">Santosh</span>
             </Link>
           </div>
