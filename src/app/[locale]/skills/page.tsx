@@ -1,4 +1,3 @@
-"use client";
 import TypographyH2 from "@/src/app/[locale]/components/typography/h2";
 import React from "react";
 import { FaHtml5 } from "react-icons/fa";
